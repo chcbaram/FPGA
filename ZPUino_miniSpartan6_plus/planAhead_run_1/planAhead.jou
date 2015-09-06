@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Apr 10 02:45:49 2015
+# Process ID: 4228
+# Log file: C:/FPGA/miniSpartan6/ZPUino_miniSpartan6_plus/planAhead_run_1/planAhead.log
+# Journal file: C:/FPGA/miniSpartan6/ZPUino_miniSpartan6_plus/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/FPGA/miniSpartan6/ZPUino_miniSpartan6_plus/pa.fromNetlist.tcl

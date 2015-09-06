@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\miniSpartan6_plus_top.ncd
+OUTFILE=C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\miniSpartan6_plus_top.bit
+FAMILY=Spartan6
+PART=xc6slx25-3ftg256
+WORKINGDIR=C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus
+LICENSE=WebPack
+USER_INFO=174470186_206666106_0_812

@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!-- GTKWave saved traces, version 2.0.0pre3-20030319 -->
+<!-- at Tue Mar  8 09:47:57 2005 -->
+
+<config>
+ <decors>
+  <decor name="default">
+   <trace-state-colors>
+    <named-color name="font" color="#00ff00"/>
+    <named-color name="low" color="#00ff00"/>
+    <named-color name="high" color="#00ff00"/>
+    <named-color name="x" color="#00ff00"/>
+    <named-color name="xfill" color="#008000"/>
+    <named-color name="trans" color="#00ff00"/>
+    <named-color name="mid" color="#00ff00"/>
+    <named-color name="vtrans" color="#00ff00"/>
+    <named-color name="vbox" color="#00ff00"/>
+    <named-color name="unloaded" color="#800000"/>
+    <named-color name="analog" color="#00ff00"/>
+    <named-color name="clip" color="#ff0000"/>
+   </trace-state-colors>
+  </decor>
+ </decors>
+
+ <trace-groups>
+  <trace-group name="default" decor="default">
+  </trace-group>
+ </trace-groups>
+
+ <pane-colors>
+  <named-color name="back" color="#181818"/>
+  <named-color name="grid" color="#808080"/>
+  <named-color name="mark" color="#0000ff"/>
+  <named-color name="umark" color="#ffff00"/>
+  <named-color name="pfont" color="#ffffff"/>
+ </pane-colors>
+
+ <markers>
+  <marker name="primary" time="0 s"/>
+ </markers>
+
+ <traces>
+  <trace name="clk_o" mode="bin" rjustified="yes">
+    <signal name="clk_o"/>
+  </trace>
+  <trace name="rst_o" mode="bin" rjustified="yes">
+    <signal name="rst_o"/>
+  </trace>
+  <trace name="addr[7:0]" mode="hex" rjustified="yes">
+    <signal name="addr[7:0]"/>
+  </trace>
+  <trace name="idata[7:0]" mode="hex" rjustified="yes">
+    <signal name="idata[7:0]"/>
+  </trace>
+  <trace name="wr" mode="bin" rjustified="yes">
+    <signal name="wr"/>
+  </trace>
+  <trace name="wre" mode="bin" rjustified="yes">
+    <signal name="wre"/>
+  </trace>
+  <trace name="adr_o[7:0]" mode="hex" rjustified="yes">
+    <signal name="adr_o[7:0]"/>
+  </trace>
+  <trace name="dat_o[7:0]" mode="hex" rjustified="yes">
+    <signal name="dat_o[7:0]"/>
+  </trace>
+  <trace name="stb_o" mode="bin" rjustified="yes">
+    <signal name="stb_o"/>
+  </trace>
+  <trace name="we_o" mode="bin" rjustified="yes">
+    <signal name="we_o"/>
+  </trace>
+  <trace name="cyc_o" mode="bin" rjustified="yes">
+    <signal name="cyc_o"/>
+  </trace>
+  <trace name="ack_i" mode="bin" rjustified="yes">
+    <signal name="ack_i"/>
+  </trace>
+  <trace name="wb_i2c.prer[15:0]" mode="hex" rjustified="yes">
+    <signal name="wb_i2c.prer[15:0]"/>
+  </trace>
+  <trace name="odata[7:0]" mode="hex" rjustified="yes">
+    <signal name="odata[7:0]"/>
+  </trace>
+  <trace name="dat_i[7:0]" mode="hex" rjustified="yes">
+    <signal name="dat_i[7:0]"/>
+  </trace>
+  <trace name="rd" mode="bin" rjustified="yes">
+    <signal name="rd"/>
+  </trace>
+  <trace name="rde" mode="bin" rjustified="yes">
+    <signal name="rde"/>
+  </trace>
+  <trace name="sdar" mode="bin" rjustified="yes">
+    <signal name="sdar"/>
+  </trace>
+  <trace name="sclr" mode="bin" rjustified="yes">
+    <signal name="sclr"/>
+  </trace>
+  <trace name="scl_padoen_o" mode="bin" rjustified="yes">
+    <signal name="scl_padoen_o"/>
+  </trace>
+  <trace name="sda_padoen_o" mode="bin" rjustified="yes">
+    <signal name="sda_padoen_o"/>
+  </trace>
+  <trace name="wb_i2c.tip" mode="bin" rjustified="yes">
+    <signal name="wb_i2c.tip"/>
+  </trace>
+  <trace name="i2c_mem.sda_o" mode="bin" rjustified="yes">
+    <signal name="i2c_mem.sda_o"/>
+  </trace>
+  <trace name="i2c_mem.sda_x" mode="bin" rjustified="yes">
+    <signal name="i2c_mem.sda_x"/>
+  </trace>
+  <trace name="i2c_mem.sda" mode="bin" rjustified="yes">
+    <signal name="i2c_mem.sda"/>
+  </trace>
+ </traces>
+</config>

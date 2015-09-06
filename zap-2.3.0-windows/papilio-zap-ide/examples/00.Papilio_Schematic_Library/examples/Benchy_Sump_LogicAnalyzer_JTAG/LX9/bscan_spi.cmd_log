@@ -1,0 +1,3 @@
+vhdtdtfi -lib work ../bscan_spi_spartan6.vhd -prj PSL_Papilio_Pro_LX9 -o bscan_spi.spl -module bscan_spi -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 bscan_spi.spl C:/dropbox/GadgetFactory/GadgetFactory_Engineering/Papilio-Schematic-Library/examples/experimental/bscan/bscan_spi.sym 
+vhdtdtfi -prj PSL_Papilio_Pro_LX9 -o C:/dropbox/GadgetFactory/GadgetFactory_Engineering/Papilio-Schematic-Library/examples/Benchy_Sump_LogicAnalyzer_JTAG/LX9/bscan_spi.vhi -module bscan_spi -template C:/Xilinx/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../bscan_spi_spartan6.vhd 

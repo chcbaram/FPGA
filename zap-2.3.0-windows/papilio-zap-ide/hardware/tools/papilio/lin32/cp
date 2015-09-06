@@ -1,0 +1,3 @@
+#!/bin/bash -x
+echo Running cp script
+cp $1 $2 $3

@@ -1,0 +1,107 @@
+Copyright (c) 2005-2006 Salvador E. Tropea <salvador en inti gov ar>
+Copyright (c) 2005-2006 Instituto Nacional de Tecnología Industrial
+Copyright (c) 2000 Richard Herveille <richard@asics.ws>
+Licencia original: Libre distribución, mantener el (c) en los fuentes.
+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+ 02111-1307, USA
+
+Dependencias: bakalint (opcional)
+              xtracth (Generador de .h y .inc)
+  Para el banco de pruebas:
+              c.stdio_h (Librería de C en VHDL)
+              wb_handler.WishboneTB (Wishbone Handler)
+              ghdl
+
+Nombre de la biblioteca: i2c_mwb (I²C Master Wishbone)
+
+  Este es un core de un periférico I²C Master para Wishbone.
+  El core proviene de OpenCores y tiene bastantes modificaciones orientadas a
+reducir el área usada y a aumentar la velocidad.
+  La mayor parte de los cambios pueden "revertirse" usando los generics.
+  El testbench incluye el modelo de una memoria I²C (Slave) similar a las 24L.
+El código original es del mismo autor pero estaba escrito en Verilog.
+  El makefile genera un .h y un .inc con las definiciones de los registros
+definidos.
+  En el directorio doc hay un PDF con información del core y del protocolo.
+Hay cosas que no coinciden ya que para optimizarlo moví algunos registros. La
+idea es que si no se usan los registros del prescaler (valor fijo) no sean
+necesarias 3 líneas de address sino sólo 2.
+  Los registros de "DEBUG" son opcionales ya que en realidad son para "DEBUG"
+del core y no de lo que lo usa.
+
+Si se usa el ghdl:
+  Para crear la biblioteca y el banco de pruebas usar make.
+  Para ejecutar el banco de pruebas: Work/tb
+
+Registros:
+----------
+
+Son de 8 bits. Este es un resumen y su objetivo es mostrar las diferencias
+con la documentación.
+
+Dirección | Modo | Nombre      | Descripción
+-----------------------------------------------------------------------------
+    0     |  R/W | I2C_CTR     | Control Register
+          |      |             | bit 7: Enable (1=enabled)
+          |      |             | bit 6: Interrupt Enable (1=enable)
+          |      |             |        No usado si USE_IEN es false.
+-----------------------------------------------------------------------------
+    1     |   R  | I2C_RXR     | Receive Register
+-----------------------------------------------------------------------------
+    1     |   W  | I2C_TXR     | Transmit Register
+-----------------------------------------------------------------------------
+    2     |   R  | I2C_SR      | Status Register
+          |      |             | bit 7: Receive Acknowledge (0=Ack received)
+          |      |             | bit 6: I²C bus busy (1=START detected)
+          |      |             | bit 5: Arbitration Lost
+          |      |             | bit 1: Transfer in Progress (1=transmiting)
+          |      |             | bit 0: Interrupt Flag (end of transmision
+          |      |             |        or arbitration lost)
+-----------------------------------------------------------------------------
+    2     |   W  | I2C_CR      | Command Register
+          |      |             | bit 7: Generate START
+          |      |             | bit 6: Generate STOP
+          |      |             | bit 5: Read from Slave
+          |      |             | bit 4: Write to Slave
+          |      |             | bit 3: Acknowledge
+          |      |             | bit 0: Interrupt Ack
+-----------------------------------------------------------------------------
+    3     |   W  | I2C_PRER_LO | Clock Prescaler Low (only if not using
+          |      |             | FIXED_PRER)
+-----------------------------------------------------------------------------
+    4     |   W  | I2C_PRER_HI | Clock Prescaler High (only if not using
+          |      |             | FIXED_PRER)
+-----------------------------------------------------------------------------
+    5     |   R  | I2C_UTXR_R  | TXR Readback (only for DEBUG==true)
+-----------------------------------------------------------------------------
+    6     |   R  | I2C_UCR_R   | CR Readback (only for DEBUG==true)
+-----------------------------------------------------------------------------
+    
+Generics:
+---------
+
+ARST_LVL   : std_logic:='0'; -- Nivel usado para el reset asincrónico
+DEBUG      : boolean:=false; -- Habilita los registros I2C_UTXR_R & I2C_UCR_R
+MUX_BETTER : boolean:=false; -- True cuando conviene usar multiplexores en
+                             -- lugar de tris-states
+FULL_SYNC  : boolean:=false; -- True si se necesita que sea completamente
+                             -- sincrónico. Esto introduce un estado de
+                             -- espera en el bus Wishbone.
+FIXED_PRER : integer:=-1;    -- Si se le asigna un valor ese valor es usado
+                             -- como pre-scaler y los registros de pre-scaler
+                             -- desaparecen.
+USE_IEN    : boolean:=true   -- False si las interrupciones estan siempre
+                             -- habilitadas (enmascaradas en otro lugar)
+

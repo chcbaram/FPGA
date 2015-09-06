@@ -1,0 +1,2 @@
+papilioprog.name=Papilio Programmer
+papilioprog.program.tool=papilioprog

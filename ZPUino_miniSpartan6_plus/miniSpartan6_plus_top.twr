@@ -1,0 +1,384 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml miniSpartan6_plus_top.twx miniSpartan6_plus_top.ncd -o
+miniSpartan6_plus_top.twr miniSpartan6_plus_top.pcf
+
+Design file:              miniSpartan6_plus_top.ncd
+Physical constraint file: miniSpartan6_plus_top.pcf
+Device,package,speed:     xc6slx25,ftg256,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "clkgen_inst/clkin_i" PERIOD = 31.25 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is  10.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clkgen_inst/clkin_i" PERIOD = 31.25 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 21.250ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 31.250ns
+  Low pulse: 15.625ns
+  Low pulse limit: 5.000ns (Tdcmpw_CLKIN_25_50)
+  Physical resource: clkgen_inst/pll_base_inst/CLKIN1
+  Logical resource: clkgen_inst/pll_base_inst/CLKIN1
+  Location pin: PLL_ADV_X0Y0.CLKIN2
+  Clock network: clkgen_inst/pll_base_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 21.250ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 31.250ns
+  High pulse: 15.625ns
+  High pulse limit: 5.000ns (Tdcmpw_CLKIN_25_50)
+  Physical resource: clkgen_inst/pll_base_inst/CLKIN1
+  Logical resource: clkgen_inst/pll_base_inst/CLKIN1
+  Location pin: PLL_ADV_X0Y0.CLKIN2
+  Clock network: clkgen_inst/pll_base_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 21.380ns (max period limit - period)
+  Period: 31.250ns
+  Max period limit: 52.630ns (19.001MHz) (Tpllper_CLKIN)
+  Physical resource: clkgen_inst/pll_base_inst/CLKIN1
+  Logical resource: clkgen_inst/pll_base_inst/CLKIN1
+  Location pin: PLL_ADV_X0Y0.CLKIN2
+  Clock network: clkgen_inst/pll_base_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "clkgen_inst/clk0" derived from  NET 
+"clkgen_inst/clkin_i" PERIOD = 31.25 ns HIGH 50%;  divided by 3.00 to 10.417 nS 
+  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 133239 paths analyzed, 10159 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   9.909ns.
+--------------------------------------------------------------------------------
+
+Paths for end point sram_inst/ctrl/r_data_out_low_13 (SLICE_X25Y45.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.321ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sram_inst/ctrl/captured_13 (FF)
+  Destination:          sram_inst/ctrl/r_data_out_low_13 (FF)
+  Requirement:          5.208ns
+  Data Path Delay:      4.209ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.569ns (0.464 - 1.033)
+  Source Clock:         sysclk falling at 5.208ns
+  Destination Clock:    sysclk rising at 10.416ns
+  Clock Uncertainty:    0.109ns
+
+  Clock Uncertainty:          0.109ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.205ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sram_inst/ctrl/captured_13 to sram_inst/ctrl/r_data_out_low_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X23Y61.Q4     Tickq                 0.992   sram_inst/ctrl/captured<13>
+                                                       sram_inst/ctrl/captured_13
+    SLICE_X25Y45.BX      net (fanout=2)        3.154   sram_inst/ctrl/captured<13>
+    SLICE_X25Y45.CLK     Tdick                 0.063   sram_inst/ctrl/r_data_out_low<15>
+                                                       sram_inst/ctrl/r_data_out_low_13
+    -------------------------------------------------  ---------------------------
+    Total                                      4.209ns (1.055ns logic, 3.154ns route)
+                                                       (25.1% logic, 74.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point sram_inst/ctrl/r_data_out_low_12 (SLICE_X25Y45.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.327ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sram_inst/ctrl/captured_12 (FF)
+  Destination:          sram_inst/ctrl/r_data_out_low_12 (FF)
+  Requirement:          5.208ns
+  Data Path Delay:      4.203ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.569ns (0.464 - 1.033)
+  Source Clock:         sysclk falling at 5.208ns
+  Destination Clock:    sysclk rising at 10.416ns
+  Clock Uncertainty:    0.109ns
+
+  Clock Uncertainty:          0.109ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.205ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sram_inst/ctrl/captured_12 to sram_inst/ctrl/r_data_out_low_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X23Y60.Q4     Tickq                 0.992   sram_inst/ctrl/captured<12>
+                                                       sram_inst/ctrl/captured_12
+    SLICE_X25Y45.AX      net (fanout=2)        3.148   sram_inst/ctrl/captured<12>
+    SLICE_X25Y45.CLK     Tdick                 0.063   sram_inst/ctrl/r_data_out_low<15>
+                                                       sram_inst/ctrl/r_data_out_low_12
+    -------------------------------------------------  ---------------------------
+    Total                                      4.203ns (1.055ns logic, 3.148ns route)
+                                                       (25.1% logic, 74.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point sram_inst/ctrl/r_data_out_low_11 (SLICE_X32Y41.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.377ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sram_inst/ctrl/captured_11 (FF)
+  Destination:          sram_inst/ctrl/r_data_out_low_11 (FF)
+  Requirement:          5.208ns
+  Data Path Delay:      4.112ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.610ns (0.427 - 1.037)
+  Source Clock:         sysclk falling at 5.208ns
+  Destination Clock:    sysclk rising at 10.416ns
+  Clock Uncertainty:    0.109ns
+
+  Clock Uncertainty:          0.109ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.205ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sram_inst/ctrl/captured_11 to sram_inst/ctrl/r_data_out_low_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X23Y56.Q4     Tickq                 0.992   sram_inst/ctrl/captured<11>
+                                                       sram_inst/ctrl/captured_11
+    SLICE_X32Y41.DX      net (fanout=2)        2.984   sram_inst/ctrl/captured<11>
+    SLICE_X32Y41.CLK     Tdick                 0.136   sram_inst/ctrl/r_data_out_low<11>
+                                                       sram_inst/ctrl/r_data_out_low_11
+    -------------------------------------------------  ---------------------------
+    Total                                      4.112ns (1.128ns logic, 2.984ns route)
+                                                       (27.4% logic, 72.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "clkgen_inst/clk0" derived from
+ NET "clkgen_inst/clkin_i" PERIOD = 31.25 ns HIGH 50%;
+ divided by 3.00 to 10.417 nS  
+
+--------------------------------------------------------------------------------
+
+Paths for end point slot0/zspiclk/pr/ck4_q (SLICE_X53Y30.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.196ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               slot0/zspiclk/prescale_reset (FF)
+  Destination:          slot0/zspiclk/pr/ck4_q (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.200ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.045 - 0.041)
+  Source Clock:         sysclk rising at 0.000ns
+  Destination Clock:    sysclk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: slot0/zspiclk/prescale_reset to slot0/zspiclk/pr/ck4_q
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y29.CQ      Tcko                  0.200   slot0/zspiclk/clk_i
+                                                       slot0/zspiclk/prescale_reset
+    SLICE_X53Y30.SR      net (fanout=7)        0.139   slot0/zspiclk/prescale_reset
+    SLICE_X53Y30.CLK     Tcksr       (-Th)     0.139   slot0/zspiclk/pr/ck2_q
+                                                       slot0/zspiclk/pr/ck4_q
+    -------------------------------------------------  ---------------------------
+    Total                                      0.200ns (0.061ns logic, 0.139ns route)
+                                                       (30.5% logic, 69.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point slot0/zspiclk/pr/ck16_q (SLICE_X53Y30.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.204ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               slot0/zspiclk/prescale_reset (FF)
+  Destination:          slot0/zspiclk/pr/ck16_q (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.208ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.045 - 0.041)
+  Source Clock:         sysclk rising at 0.000ns
+  Destination Clock:    sysclk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: slot0/zspiclk/prescale_reset to slot0/zspiclk/pr/ck16_q
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y29.CQ      Tcko                  0.200   slot0/zspiclk/clk_i
+                                                       slot0/zspiclk/prescale_reset
+    SLICE_X53Y30.SR      net (fanout=7)        0.139   slot0/zspiclk/prescale_reset
+    SLICE_X53Y30.CLK     Tcksr       (-Th)     0.131   slot0/zspiclk/pr/ck2_q
+                                                       slot0/zspiclk/pr/ck16_q
+    -------------------------------------------------  ---------------------------
+    Total                                      0.208ns (0.069ns logic, 0.139ns route)
+                                                       (33.2% logic, 66.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point slot0/zspiclk/pr/ck2_q (SLICE_X53Y30.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.207ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               slot0/zspiclk/prescale_reset (FF)
+  Destination:          slot0/zspiclk/pr/ck2_q (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.211ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.045 - 0.041)
+  Source Clock:         sysclk rising at 0.000ns
+  Destination Clock:    sysclk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: slot0/zspiclk/prescale_reset to slot0/zspiclk/pr/ck2_q
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y29.CQ      Tcko                  0.200   slot0/zspiclk/clk_i
+                                                       slot0/zspiclk/prescale_reset
+    SLICE_X53Y30.SR      net (fanout=7)        0.139   slot0/zspiclk/prescale_reset
+    SLICE_X53Y30.CLK     Tcksr       (-Th)     0.128   slot0/zspiclk/pr/ck2_q
+                                                       slot0/zspiclk/pr/ck2_q
+    -------------------------------------------------  ---------------------------
+    Total                                      0.211ns (0.072ns logic, 0.139ns route)
+                                                       (34.1% logic, 65.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "clkgen_inst/clk0" derived from
+ NET "clkgen_inst/clkin_i" PERIOD = 31.25 ns HIGH 50%;
+ divided by 3.00 to 10.417 nS  
+
+--------------------------------------------------------------------------------
+Slack: 7.292ns (period - min period limit)
+  Period: 10.416ns
+  Min period limit: 3.124ns (320.102MHz) (Trper_CLKA(Fmax))
+  Physical resource: zpuino/stack/stackram[0].stackmem/CLKA
+  Logical resource: zpuino/stack/stackram[0].stackmem/CLKA
+  Location pin: RAMB16_X0Y14.CLKA
+  Clock network: sysclk
+--------------------------------------------------------------------------------
+Slack: 7.292ns (period - min period limit)
+  Period: 10.416ns
+  Min period limit: 3.124ns (320.102MHz) (Trper_CLKB(Fmax))
+  Physical resource: zpuino/stack/stackram[0].stackmem/CLKB
+  Logical resource: zpuino/stack/stackram[0].stackmem/CLKB
+  Location pin: RAMB16_X0Y14.CLKB
+  Clock network: sysclk
+--------------------------------------------------------------------------------
+Slack: 7.292ns (period - min period limit)
+  Period: 10.416ns
+  Min period limit: 3.124ns (320.102MHz) (Trper_CLKA(Fmax))
+  Physical resource: prom/rom/Mram_RAM1/CLKA
+  Logical resource: prom/rom/Mram_RAM1/CLKA
+  Location pin: RAMB16_X1Y14.CLKA
+  Clock network: sysclk
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "clkgen_inst/clk1" derived from  NET 
+"clkgen_inst/clkin_i" PERIOD = 31.25 ns HIGH 50%;  divided by 3.00 to 10.417 nS 
+  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.730ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "clkgen_inst/clk1" derived from
+ NET "clkgen_inst/clkin_i" PERIOD = 31.25 ns HIGH 50%;
+ divided by 3.00 to 10.417 nS  
+
+--------------------------------------------------------------------------------
+Slack: 8.686ns (period - min period limit)
+  Period: 10.416ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: clkgen_inst/clk1_inst/I0
+  Logical resource: clkgen_inst/clk1_inst/I0
+  Location pin: BUFGMUX_X2Y2.I0
+  Clock network: clkgen_inst/clk1
+--------------------------------------------------------------------------------
+Slack: 8.777ns (period - min period limit)
+  Period: 10.416ns
+  Min period limit: 1.639ns (610.128MHz) (Tockper)
+  Physical resource: DRAM_CLK_OBUF/CLK0
+  Logical resource: sram_inst/ctrl/clock/CK0
+  Location pin: OLOGIC_X23Y46.CLK0
+  Clock network: sysclk_sram_we
+--------------------------------------------------------------------------------
+Slack: 9.013ns (period - min period limit)
+  Period: 10.416ns
+  Min period limit: 1.403ns (712.758MHz) (Tockper)
+  Physical resource: DRAM_CLK_OBUF/CLK1
+  Logical resource: sram_inst/ctrl/clock/CK1
+  Location pin: OLOGIC_X23Y46.CLK1
+  Clock network: sysclk_sram_we
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for clkgen_inst/clkin_i
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|clkgen_inst/clkin_i            |     31.250ns|     10.000ns|     29.727ns|            0|            0|            0|       133239|
+| clkgen_inst/clk0              |     10.417ns|      9.909ns|          N/A|            0|            0|       133239|            0|
+| clkgen_inst/clk1              |     10.417ns|      1.730ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    9.909|    4.887|         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 133239 paths, 0 nets, and 16388 connections
+
+Design statistics:
+   Minimum period:  10.000ns{1}   (Maximum frequency: 100.000MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Aug 26 03:00:30 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 299 MB
+
+
+

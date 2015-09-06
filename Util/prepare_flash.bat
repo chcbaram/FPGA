@@ -1,0 +1,1 @@
+xc3sprog.exe -c ftdi spiflasherLX25.bit

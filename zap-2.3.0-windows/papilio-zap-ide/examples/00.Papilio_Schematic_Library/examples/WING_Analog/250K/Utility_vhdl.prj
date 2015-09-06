@@ -1,0 +1,2 @@
+vhdl zpuino "C:\dropbox\GadgetFactory\GadgetFactory_Engineering\Papilio-Schematic-Library\examples\Template_PSL_Base\Libraries\ZPUino_1\Wing_GPIO.vhd"
+vhdl work "C:\dropbox\GadgetFactory\GadgetFactory_Engineering\Papilio-Schematic-Library\examples\Template_PSL_Base\250K\Utility.vhf"

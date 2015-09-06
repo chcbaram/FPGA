@@ -1,0 +1,717 @@
+                          
+                                 
+                                  
+
+
+
+
+                                                                                                 24LC01B/02B
+                                                                                            
+                                                              1K/2K 2.5V I2C  Serial EEPROM
+
+                              FEATURES                                                             PACKAGE TYPES
+
+                              · Single supply with operation down to 2.5V
+                              · Low power CMOS technology                                              PDIP
+
+                                - 1 mA active current typical                                                     A0        1                                        8       Vcc
+                                - 10 µA standby current typical at 5.5V                                                                24LC01B/02B
+                                - 5 µA standby current typical at 3.0V                                            A1        2                                        7       WP
+                              · Organized as a single block of 128 bytes (128 x 8) 
+                                or 256 bytes (256 x 8)                                                            A2        3                                        6       SCL
+                              · 2-wire serial interface bus, I2C  compatible
+                              · 100kHz (2.5V) and 400kHz (5.0V) compatibility                                    Vss        4                                        5       SDA
+
+                              · Self-timed write cycle (including auto-erase)
+
+                              · Page-write buffer for up to 8 bytes
+
+                              · 2 ms typical write cycle time for page-write                           SOIC
+                              · Hardware write protect for entire memory
+
+                              · Can be operated as a serial ROM
+                              · ESD protection > 3,000V                                                          A0              1                    24LC01B/02B    8          Vcc
+                              · 10,000,000 ERASE/WRITE cycles guaranteed on 
+                                24LC01B                                                                          A1              2                                   7          WP
+
+                              · 1,000,000 E/W cycles guaranteed on 24LC02B                                                       3                                   6
+                              · Data retention > 200 years                                                       A2                                                             SCL
+
+                              · 8 pin DIP or SOIC package
+                                                                                                                 Vss             4                                   5          SDA
+                              · Available for extended temperature ranges
+                                - Commercial (C):                     0°C to    +70°C
+                                - Industrial (I):                  -40°C to     +85°C
+
+                              DESCRIPTION                                                          BLOCK DIAGRAM
+
+                              The Microchip Technology Inc. 24LC01B and 24LC02B                                  WP
+                              are 1K bit and 2K bit Electrically Erasable PROMs. The
+                              devices are organized as a single block of 128 x 8 bit or                                                                                   HV GENERATOR
+                              256 x 8 bit memory with a two wire serial interface. Low
+                              voltage design permits operation down to 2.5 volts with                    I/O       MEMORY
+                              a standby and active currents of only 5 µA and 1 mA                                                                                           EEPROM 
+                                                                                                      CONTROL      CONTROL                                                   ARRAY
+                              respectively. The 24LC01B and 24LC02B also have                                                         XDEC
+                                                                                                       LOGIC            LOGIC
+
+                              page-write capability for up to 8 bytes of data. The                                                                                        PAGE LATCHES
+                              24LC01B and 24LC02B are available in the standard
+                              8-pin DIP and an 8-pin surface mount SOIC package.                     SDA SCL
+                                                                                                                                                                             YDEC
+
+
+
+                                                                                                      VCC                                                                  SENSE AMP
+                                                                                                                                                                          R/W CONTROL
+                                                                                                      VSS
+
+
+
+
+
+                              I2C is a trademark of Philips Corporation.
+
+
+
+                               1996 Microchip Technology Inc.                                                                                                       DS20071H-page 1
+
+
+
+                                                                      This document was created with FrameMaker 4 0 4
+
+
+                                                                                                           
+24LC01B/02B
+
+1.0           ELECTRICAL CHARACTERISTICS                                                                       TABLE 1-1:             PIN FUNCTION TABLE
+
+1.1           Maximum Ratings*                                                                                         Name               Function
+
+VCC...................................................................................7.0V                              VSS               Ground
+All inputs and outputs w.r.t. VSS ............... -0.6V to VCC +1.0V                                                   SDA                Serial Address/Data I/O
+Storage temperature ..................................... -65°C to +150°C                                              SCL                Serial Clock
+Ambient temp. with power applied ................ -65°C to +125°C                                                       WP                Write Protect Input
+Soldering temperature of leads (10 seconds) ............. +300°C                                                        VCC               +2.5V to 5.5V Power Supply
+ESD protection on all pins............................................. 4 kV                                    A0, A1, A2               No Internal Connection
+*Notice: Stresses above those listed under "Maximum ratings"
+may cause permanent damage to the device.  This is a stress rat-
+ing only and functional operation of the device at those or any
+other conditions above those indicated in the operational listings
+of this specification is not implied.  Exposure to maximum rating
+conditions for extended periods may affect device reliability.
+
+
+
+
+TABLE 1-2:                    DC CHARACTERISTICS
+
+                                                                       VCC = +2.5V to +5.5V                            Commercial  (C): Tamb =    0°C to +70°C
+                                                                                                                       Industrial           (I): Tamb = -40°C to +85°C
+
+                         Parameter                                       Symbol                   Min.                 Max.     Units                     Conditions
+
+ WP, SCL and SDA pins:                                                       VIH                .7 VCC                               V
+       High level input voltage
+
+       Low level input voltage                                                VIL                                 .3 VCC             V
+
+       Hysteresis of Schmidt trigger inputs                                 VHYS               .05 VCC                  --            V        (Note) 
+
+       Low level output voltage                                              VOL                                       .40           V        IOL = 3.0 mA, VCC = 2.5V
+
+ Input leakage current                                                        ILI                  -10                 10            µA       VIN = .1V to 5.5V
+
+ Output leakage current                                                      ILO                   -10                 10       µmA VOUT = .1V to 5.5V
+
+ Pin capacitance (all inputs/outputs)                                        CIN,                  --                   10            pF       VCC = 5.0V (Note 1)
+                                                                           COUT                                                               Tamb = 25°C, FCLK = 1 MHz
+
+ Operating current                                                      ICC Write                  --                    3            mA       VCC = 5.5V, SCL = 400 kHz
+
+                                                                        ICC Read                   --                    1            mA
+
+ Standby current                                                            ICCS                   --                   30            µA       VCC = 3.0V, SDA = SCL = VCC
+
+                                                                                                                       100           µA       VCC = 5.5V, SDA = SCL = VCC
+
+ Note:           This parameter is periodically sampled and not 100% tested.
+
+FIGURE 1-1:                   BUS TIMING START/STOP
+
+
+                                                                                                               VHYS
+
+
+
+
+  SCL
+                                                           THD:STA
+                   TSU:STA                                                                                                           TSU:STO
+
+  SDA
+
+
+
+
+
+                                        START                                                                                                         STOP
+
+
+
+
+
+DS20071H-page 2                                                                                                                                  1996 Microchip Technology Inc.
+
+
+                                                                                                                                                     
+
+                                                                                                                        24LC01B/02B
+
+TABLE 1-3:              AC CHARACTERISTICS
+
+                                                          STANDARD                       Vcc = 4.5 - 5.5V
+              Parameter                     Symbol                  MODE                  FAST MODE                     Units                            Remarks
+
+                                                          Min.           Max.             Min.           Max.
+
+Clock frequency                              FCLK              --         100               --              400            kHz
+
+Clock high time                             THIGH        4000               --              600              --             ns
+
+Clock low time                               TLOW        4700               --             1300              --             ns
+
+SDA and SCL rise time                         TR               --         1000              --              300             ns          (Note 1)
+
+SDA and SCL fall time                         TF               --         300               --              300             ns          (Note 1)
+
+START condition hold time                   THD:STA      4000               --              600              --             ns          After this period the first 
+                                                                                                                                      clock pulse is generated
+
+START condition setup time                  TSU:STA      4700               --              600              --             ns          Only relevant for repeated
+                                                                                                                                      START condition
+
+Data input hold time                        THD:DAT            0            --               0               --             ns          (Note 2)
+
+Data input setup time                       TSU:DAT       250               --              100              --             ns
+
+STOP condition setup time                   TSU:STO      4000               --              600              --             ns
+
+Output valid from clock                      TAA               --         3500              --              900             ns          (Note 2)
+
+Bus free time                                TBUF        4700               --             1300              --             ns          Time the bus must be free 
+                                                                                                                                      before a new transmission 
+                                                                                                                                      can start
+
+Output fall time from VIH                    TOF               --         250             20 +0.1          250             ns          (Note 1), CB  100 pF
+minimum to VIL maximum                                                                     CB
+
+Input filter spike suppression                TSP               --            50             --                50            ns          (Note 3)
+(SDA and SCL pins)
+
+Write cycle time                             TWR               --            10             --                10            ms          Byte or Page mode
+
+Endurance          24LC01B                                10M               --             10M                                         25°C, Vcc = 5.0V, Block 
+                                              --                                                             --          cycles
+                   24LC01B                                1M                               1M                                         Mode (Note 4)
+
+Note 1: Not 100% tested. CB = total capacitance of one bus line in pF.
+          2: As a transmitter, the device must provide an internal minimum delay time to bridge the undefined region 
+             (minimum 300 ns) of the falling edge of SCL to avoid unintended generation of START or STOP conditions.
+          3: The combined TSP and VHYS specifications are due to new Schmitt trigger inputs which provide improved 
+             noise spike suppression. This eliminates the need for a TI specification for standard operation.
+          4: This parameter is not tested but guaranteed by characterization. For endurance estimates in a specific appli-
+             cation, please consult the Total Endurance Model which can be obtained on our BBS or website.
+
+FIGURE 1-2:             BUS TIMING DATA
+
+                                      TF                                                                                           TR
+
+                                                          THIGH
+
+                                            TLOW
+
+
+   SCL
+             TSU:STA
+                                                                    THD:DAT                      TSU:DAT          TSU:STO
+                                       THD:STA
+   SDA
+    IN                  TSP
+
+
+                               TAA                  THD:STA
+                                                                                  TAA                                                                    TBUF
+
+   SDA
+   OUT
+
+
+
+
+
+ 1996 Microchip Technology Inc.                                                                                                                          DS20071H-page 3
+
+
+                                                                                                                                                      
+24LC01B/02B
+
+2.0      FUNCTIONAL DESCRIPTION                                   3.4          Data Valid (D)
+
+The 24LC01B/02B supports a bi-directional two wire                The state of the data line represents valid data when,
+bus and data transmission protocol.  A device that                after a START condition, the data line is stable for the
+sends data onto the bus is defined as transmitter, and             duration of the HIGH period of the clock signal.
+a device receiving data as receiver.  The bus has to be           The data on the line must be changed during the LOW
+controlled by a master device which generates the                 period of the clock signal.  There is one clock pulse per
+serial clock (SCL), controls the bus access, and gener-           bit of data.
+ates the START and STOP conditions, while the
+24LC01B/02B works as slave.  Both master and slave                Each data transfer is initiated with a START condition
+can operate as transmitter or receiver but the master             and terminated with a STOP condition.  The number of
+device determines which mode is activated.                        the data bytes transferred between the START and
+                                                                  STOP conditions is determined by the master device
+3.0      BUS CHARACTERISTICS                                      and is theoretically unlimited, although only the last six-
+The following bus protocol has been defined:                       teen will be stored when doing a write operation.  When
+                                                                  an overwrite does occur it will replace data in a first in
+· Data transfer may be initiated only when the bus is             first out fashion.
+  not busy.
+
+· During data transfer, the data line must remain                 3.5          Acknowledge
+  stable whenever the clock line is HIGH.  Changes 
+  in the data line while the clock line is HIGH will be           Each receiving device, when addressed, is obliged to
+  interpreted as a START or STOP condition.                       generate an acknowledge after the reception of each
+                                                                  byte. The master device must generate an extra clock
+Accordingly, the following bus conditions have been               pulse which is associated with this acknowledge bit.
+defined (Figure 3-1).
+                                                                      Note:       The 24LC01B/02B does not generate any
+3.1      Bus not Busy (A)                                                         acknowledge bits if an internal program-
+                                                                                  ming cycle is in progress.
+Both data and clock lines remain HIGH.
+                                                                  The device that acknowledges has to pull down the
+3.2      Start Data Transfer (B)                                  SDA line during the acknowledge clock pulse in such a
+                                                                  way that the SDA line is stable LOW during the HIGH
+A HIGH to LOW transition of the SDA line while the                period of the acknowledge related clock pulse.   Of
+clock (SCL) is HIGH determines a START condition.  All            course, setup and hold times must be taken into
+commands must be preceded by a START condition.                   account.  A master must signal an end of data to the
+3.3      Stop Data Transfer (C)                                   slave by not generating an acknowledge bit on the last
+                                                                  byte that has been clocked out of the slave.  In this
+A LOW to HIGH transition of the SDA line while the                case, the slave must leave the data line HIGH to enable
+clock (SCL) is HIGH determines a STOP condition.  All             the master to generate the STOP condition.
+operations must be ended with a STOP condition.
+
+
+
+
+
+FIGURE 3-1:              DATA TRANSFER SEQUENCE ON THE SERIAL BUS
+
+        (A)       (B)                           (D)                                (D)                             (C)    (A)
+ SCL
+
+
+
+
+ SDA
+
+
+
+
+
+                START                     ADDRESS OR          DATA                                                STOP
+               CONDITION                 ACKNOWLEDGE        ALLOWED                                             CONDITION
+                                              VALID         TO CHANGE
+
+
+
+
+
+DS20071H-page 4                                                                                1996 Microchip Technology Inc.
+
+
+                                                                                                         24LC01B/02B
+
+3.6          Devide Address                                                        4.0        WRITE OPERATION
+
+The 24LC01B/02B are software-compatible with older                                 4.1        Byte Write
+devices such as 24C01A, 24C02A, 24LC01, and
+24LC02.  A single 24LC02B can be used in place of two                              Following the start signal from the master, the device
+24LC01's, for example, without any modifications to                                 code (4 bits), the don't care bits (3 bits), and the R/W bit
+software.  The "chip select" portion of the control byte                           which is a logic low is placed onto the bus by the master
+becomes a don't care.                                                              transmitter.  This indicates to the addressed slave
+After generating a START condition, the bus master                                 receiver that a byte with a word address will follow after
+transmits the slave address consisting of a 4-bit device                           it has generated an acknowledge bit during the ninth
+code (1010) for the 24LC01B/02B, followed by three                                 clock cycle.  Therefore the next byte transmitted by the
+don't care bits.                                                                   master is the word address and will be written into the
+                                                                                   address pointer of the 24LC01B/02B.  After receiving
+The eighth bit of slave address determines if the master                           another acknowledge signal from the 24LC01B/02B the
+device wants to read or write to the 24LC01B/02B                                   master device will transmit the data word to be written
+(Figure 3-2).                                                                      into the addressed memory location.  The 24LC01B/
+The 24LC01B/02B monitors the bus for its correspond-                               02B acknowledges again and the master generates a
+ing slave address all the time.  It generates an acknowl-                          stop condition.  This initiates the internal write cycle,
+edge bit if the slave address was true and it is not in a                          and during this time the 24LC01B/02B will not generate
+programming mode.                                                                  acknowledge signals (Figure 4-1).
+
+                        Control               Chip                                 4.2        Page Write 
+  Operation                                                        R/W
+                             Code             Select
+                                                                                   The write control byte, word address and the first data
+        Read                 1010             XXX                   1              byte are transmitted to the 24LC01B/02B in the same
+        Write                1010             XXX                   0              way as in a byte write. But instead of generating a stop
+FIGURE 3-2:            CONTROL BYTE                                                condition the master transmits up to eight data bytes to
+                       ALLOCATION                                                  the 24LC01B/02B which are temporarily stored in the
+                                                                                   on-chip page buffer and will be written into the memory
+            START                             READ/WRITE                           after the master has transmitted a stop condition. After
+                                                                                   the receipt of each word, the three lower order address
+                                                                                   pointer bits are internally incremented by one. The
+                      SLAVE ADDRESS                          R/W     A             higher order five bits of the word address remains con-
+                                                                                   stant. If the master should transmit more than eight
+                                                                                   words prior to generating the stop condition, the
+                                                                                   address counter will roll over and the previously
+       1         0      1         0      X        X           X                    received data will be overwritten. As with the byte write
+                                                                                   operation, once the stop condition is received an inter-
+  X = Don't care                                                                   nal write cycle will begin (Figure 4-2).
+
+
+
+FIGURE 4-1:            BYTE WRITE
+                        S
+ BUS ACTIVITY           T               CONTROL                                   WORD                                                          S
+ MASTER                 A                 BYTE                                   ADDRESS                                                        T
+                                                                                                                 DATA
+                        R                                                                                                                       O
+                        T                                                                                                                       P
+
+
+ SDA LINE               S                                                                                                                  P
+
+                                                                     A                              A                                 A
+ BUS ACTIVITY                                                        C                              C                                 C
+                                                                     K                              K                                 K
+
+FIGURE 4-2:            PAGE WRITE
+
+       BUS ACTIVITY          S
+                             T
+       MASTER                          CONTROL                                                                                                  S
+                                                                    WORD
+                             A          BYTE                                                                                                    T
+                                                             ADDRESS (n)
+                             R                                                      DATA n          DATAn + 1            DATAn + 7              O
+                             T                                                                                                                  P
+       SDA LINE              S                                                                                                                  P
+
+                                                        A                   A                  A                  A                        A
+       BUS ACTIVITY                                     C                   C                  C                  C                        C
+                                                        K                   K                  K                  K                        K
+
+
+
+
+ 1996 Microchip Technology Inc.                                                                                               DS20071H-page 5
+
+
+24LC01B/02B
+
+5.0      ACKNOWLEDGE POLLING                                 7.0      READ OPERATION
+
+Since the device will not acknowledge during a write         Read operations are initiated in the same way as write
+cycle, this can be used to determine when the cycle is       operations with the exception that the R/W bit of the
+complete (this feature can be used to maximize bus           slave address is set to one. There are three basic types
+throughput). Once the stop condition for a write com-        of read operations: current address read, random read,
+mand has been issued from the master, the device ini-        and sequential read.
+tiates the internally timed write cycle. ACK polling can
+be initiated immediately. This involves the master send-     7.1      Current Address Read
+ing a start condition followed by the control byte for a     The 24LC01B/02B contains an address counter that
+write command (R/W = 0). If the device is still busy with    maintains the address of the last word accessed, inter-
+the write cycle, then no ACK will be returned. If the        nally incremented by one. Therefore, if the previous
+cycle is complete, then the device will return the ACK       access (either a read or write operation) was to address
+and the master can then proceed with the next read or        n, the next current address read operation would
+write command. See Figure 5-1 for flow diagram.               access data from address n + 1. Upon receipt of the
+FIGURE 5-1:        ACKNOWLEDGE POLLING                       slave address with R/W bit set to one, the 24LC01B/
+                   FLOW                                      02B issues an acknowledge and transmits the eight bit
+                                                             data word. The master will not acknowledge the transfer
+                                                             but does generate a stop condition and the 24LC01B/
+                        Send                                 02B discontinues transmission (Figure 7-1).
+                   Write Command
+                                                             7.2      Random Read
+
+                                                             Random read operations allow the master to access
+                     Send Stop                               any memory location in a random manner. To perform
+                    Condition to
+                Initiate Write Cycle                         this type of read operation, first the word address must
+                                                             be set. This is done by sending the word address to the
+                                                             24LC01B/02B as part of a write operation. After the
+                                                             word address is sent, the master generates a start con-
+                     Send Start                              dition following the acknowledge. This terminates the
+                                                             write operation, but not before the internal address
+                                                             pointer is set. Then the master issues the control byte
+                                                             again but with the R/W bit set to a one. The 24LC01B/
+                Send Control Byte                            02B will then issue an acknowledge and transmits the
+                   with R/W = 0                              eight bit data word. The master will not acknowledge
+                                                             the transfer but does generate a stop condition and the
+                                                             24LC01B/02B discontinues transmission (Figure 7-2).
+
+                     Did Device           NO                 7.3      Sequential Read
+                    Acknowledge
+                     (ACK = 0)?                              Sequential reads are initiated in the same way as a ran-
+                                YES                          dom read except that after the 24LC01B/02B transmits
+                                                             the first data byte, the master issues an acknowledge
+                        Next                                 as opposed to a stop condition in a random read. This
+                     Operation                               directs the 24LC01B/02B to transmit the next sequen-
+                                                             tially addressed 8-bit word (Figure 7-3).
+
+                                                             To provide sequential reads the 24LC01B/02B contains
+6.0      WRITE PROTECTION                                    an internal address pointer which is incremented by
+The 24LC01B/02B can be used as a serial ROM when             one at the completion of each operation. This address
+the WP pin is connected to VCC. Programming will be          pointer allows the entire memory contents to be serially
+inhibited and the entire memory will be write-protected.     read during one operation. 
+
+                                                             7.4      Noise Protection
+
+                                                             The 24LC01B/02B employs a VCC threshold detector
+                                                             circuit which disables the internal erase/write logic if the
+                                                             VCC is below 1.5 volts at nominal conditions. 
+
+                                                             The SCL and SDA inputs have Schmitt trigger and filter
+                                                             circuits which suppress noise spikes to assure proper
+                                                             device operation even on a noisy bus.
+
+
+
+
+DS20071H-page 6                                                                         1996 Microchip Technology Inc.
+
+
+                                                                                                              24LC01B/02B
+
+FIGURE 7-1:           CURRENT ADDRESS READ
+
+                                       S
+                 BUS ACTIVITY          T                                                                                      S
+                                       A               CONTROL                                                                T
+                 MASTER                R                 BYTE                                     DATA n                      O
+                                       T                                                                                      P
+
+
+                 SDA LINE              S                                                                                      P
+
+                 BUS ACTIVITY                                           A                                                N
+                                                                        C                                                O
+                                                                        K                                                 
+                                                                                                                         A
+                                                                                                                         C
+                                                                                                                         K
+
+
+FIGURE 7-2:           RANDOM READ
+
+                                  S                                                   S
+                                  T                                                   T                                                     S
+                 BUS ACTIVITY  A            CONTROL                WORD                         CONTROL
+                                                                                      A                                                     T
+                 MASTER           R          BYTE             ADDRESS (n)                        BYTE                   DATA n
+                                                                                      R                                                     O
+                                  T                                                   T                                                     P
+
+                                  S
+                 SDA LINE                                                             S                                                     P
+
+                                                         A                       A                            A                       N
+                 BUS ACTIVITY                            C                       C                            C                       O
+                                                         K                       K                            K                         
+                                                                                                                                      A
+                                                                                                                                      C
+                                                                                                                                      K
+
+
+FIGURE 7-3:           SEQUENTIAL READ
+                                                                                                                                                      S
+                                                              A                            A                       A                                  T
+         BUS ACTIVITY        CONTROL                          C                            C                       C                                  O
+         MASTER               BYTE                            K                            K                       K                                  P
+
+         SDA LINE                                                                                                                                     P
+
+                                       A                                                                                                         N
+         BUS ACTIVITY                  C       DATA n                                                                                            O
+                                                                   DATA n + 1                   DATA n + 2                         DATA n + X
+                                       K                                                                                                          
+                                                                                                                                                 A
+                                                                                                                                                 C
+                                                                                                                                                 K
+
+
+
+
+
+8.0       PIN DESCRIPTIONS                                                       8.3            WP
+
+8.1       SDA Serial Address/Data Input/Output                                   This pin must be connected to either VSS or VCC.
+                                                                                 If tied to VSS, normal memory operation is enabled
+This is a bi-directional pin used to transfer addresses                          (read/write the entire memory).
+and data into and data out of the device. It is an open
+drain terminal, therefore the SDA bus requires a pull-up                         If tied to VCC, WRITE operations are inhibited. The
+resistor to V                                                                    entire memory will be write-protected. Read operations
+             CC (typical 10K for 100 kHz, 1K for 400
+kHz).                                                                            are not affected.
+For normal data transfer SDA is allowed to change only                           This feature allows the user to use the 24LC01B/02B as
+during SCL low. Changes during SCL high are reserved                             a serial ROM when WP is enabled (tied to VCC).
+for indicating the START and STOP conditions.                                    8.4            A0, A1, A2
+8.2       SCL Serial Clock                                                       These pins are not used by the 24LC01B/02B. They
+This input is used to synchronize the data transfer from                         may be left floating or tied to either VSS or VCC.
+and to the device.
+
+
+
+
+
+ 1996 Microchip Technology Inc.                                                                                                     DS20071H-page 7
+
+
+24LC01B/02B
+
+NOTES:
+
+
+
+
+
+DS20071H-page 8     1996 Microchip Technology Inc.
+
+
+                                    24LC01B/02B
+
+NOTES:
+
+
+
+
+
+ 1996 Microchip Technology Inc.         DS20071H-page 9
+
+
+24LC01B/02B
+
+NOTES:
+
+
+
+
+
+DS20071H-page 10     1996 Microchip Technology Inc.
+
+
+24LC01B/02B
+
+24LC01B/02B Product Identification System
+
+To order or to obtain information, e.g., on pricing or delivery, please use the listed part numbers, and refer to the factory or the listed
+sales offices.
+
+
+ 24LC01B/02B         ­         /P
+                                                   Package:                       P = Plastic DIP (300 mil Body), 8-lead
+                                                                                SN = Plastic SOIC (150 mil Body)
+                                                                                SM = Plastic SOIC (207 mil Body)
+
+                                                   Temperature               Blank = 0°C to +70°C 
+                                                   Range:                          I = -40°C to +85°C
+
+                                                   Device:               24LC01B        1K I2C Serial EEPROM
+                                                                       24LC01BT         1K I2C Serial EEPROM (Tape and Reel)
+                                                                         24LC02B        2K I2C Serial EEPROM
+                                                                       24LC02BT         2K I2C Serial EEPROM (Tape and Reel)
+
+
+
+
+
+ 1996 Microchip Technology Inc.                                                  1996 Microchip Technology Inc.DS20071H-page 11
+
+
+                          WORLDWIDE SALES & SERVICE
+
+
+AMERICAS                                                  ASIA/PACIFIC                                              EUROPE
+Corporate Office                                           China                                                     United Kingdom
+Microchip Technology Inc.                                 Microchip Technology                                      Arizona Microchip Technology Ltd.
+2355 West Chandler Blvd.                                  Unit 406 of Shanghai Golden Bridge Bldg.                  Unit 6, The Courtyard
+Chandler, AZ  85224-6199                                  2077 Yan'an Road West, Hongiao District                   Meadow Bank, Furlong Road
+Tel: 602 786-7200  Fax: 602 786-7277                      Shanghai, Peoples Republic of China                       Bourne End, Buckinghamshire SL8 5AJ
+Technical Support:  602 786-7627                          Tel: 86 21 6275 5700                                      Tel: 44 1628 850303 Fax: 44 1628 850178
+Web: http://www.microchip.com                             Fax: 011 86 21 6275 5060                                  France
+Atlanta                                                   Hong Kong                                                 Arizona Microchip Technology SARL
+Microchip Technology Inc.                                 Microchip Technology                                      Zone Industrielle de la Bonde
+500 Sugar Mill Road, Suite 200B                           RM 3801B, Tower Two                                       2 Rue du Buisson aux Fraises
+Atlanta, GA  30350                                        Metroplaza                                                91300 Massy - France
+Tel: 770 640-0034  Fax: 770 640-0307                      223 Hing Fong Road                                        Tel: 33 1 69 53 63 20  Fax: 33 1 69 30 90 79
+Boston                                                    Kwai Fong, N.T. Hong Kong                                 Germany
+                                                          Tel: 852 2 401 1200  Fax: 852 2 401 3431
+Microchip Technology Inc.                                                                                           Arizona Microchip Technology GmbH
+5 Mount Royal Avenue                                      India                                                     Gustav-Heinemann-Ring 125
+Marlborough, MA  01752                                    Microchip Technology                                      D-81739 Muenchen, Germany
+Tel: 508 480-9990   Fax: 508 480-8575                     No. 6, Legacy, Convent Road                               Tel: 49 89 627 144 0 Fax: 49 89 627 144 44
+Chicago                                                   Bangalore 560 025 India                                   Italy
+                                                          Tel: 91 80 526 3148  Fax: 91 80 559 9840
+Microchip Technology Inc.                                                                                           Arizona Microchip Technology SRL
+333 Pierce Road, Suite 180                                Korea                                                     Centro Direzionale Colleone Pas Taurus 1
+Itasca, IL  60143                                         Microchip Technology                                      Viale Colleoni 1
+Tel: 708 285-0071  Fax: 708 285-0075                      168-1, Youngbo Bldg. 3 Floor                              20041 Agrate Brianza
+Dallas                                                    Samsung-Dong, Kangnam-Ku,                                 Milan Italy 
+                                                          Seoul, Korea
+Microchip Technology Inc.                                                                                           Tel: 39 39 6899939 Fax: 39 39 689 9883
+                                                          Tel: 82 2 554 7200 Fax: 82 2 558 5934
+14651 Dallas Parkway, Suite 816                                                                                     JAPAN
+Dallas, TX  75240-8809                                    Singapore                                                 Microchip Technology Intl. Inc.
+Tel: 972 991-7177  Fax: 972 991-8588                      Microchip Technology                                      Benex S-1 6F
+Dayton                                                    200 Middle Road                                           3-18-20, Shin Yokohama
+                                                          #10-03 Prime Centre
+Microchip Technology Inc.                                                                                           Kohoku-Ku, Yokohama
+                                                          Singapore 188980
+Suite 150                                                                                                           Kanagawa 222 Japan
+                                                          Tel:  65 334 8870  Fax: 65 334 8850
+Two Prestige Place                                                                                                  Tel: 81 45 471 6166  Fax: 81 45 471 6122
+Miamisburg, OH 45342                                      Taiwan, R.O.C
+Tel: 513 291-1654  Fax: 513 291-9175                      Microchip Technology                                                                                      9/3/96
+Los Angeles                                               10F-1C 207
+                                                          Tung Hua North Road
+Microchip Technology Inc.
+                                                          Taipei, Taiwan, ROC
+18201 Von Karman, Suite 1090
+                                                          Tel: 886 2 717 7175  Fax: 886 2 545 0139
+Irvine, CA  92612
+Tel: 714 263-1888  Fax: 714 263-1338
+New York
+Microchip Technmgy Inc.
+150 Motor Parkway, Suite 416
+Hauppauge, NY  11788
+Tel: 516 273-5305  Fax: 516 273-5335
+San Jose
+Microchip Technology Inc.
+2107 North First Street, Suite 590
+San Jose, CA  95131
+Tel: 408 436-7950  Fax: 408 436-7955
+Toronto
+Microchip Technology Inc.
+5925 Airport Road, Suite 200
+Mississauga, Ontario L4V 1W1, Canada 
+Tel: 905 405-6279        Fax: 905 405-6253
+
+
+
+
+
+                                        All rights reserved.  1996, Microchip Technology Incorporated, USA.  9/96
+
+                                                                           Printed on recycled paper.
+
+Information contained in this publication regarding device applications and the like is intended through suggestion only and may be superseded by updates. No repre-
+sentation or warranty is given and no liability is assumed by Microchip Technology Incorporated with respect to the accuracy or use of such information, or infringement
+of patents or other intellectual property rights arising from such use or otherwise. Use of Microchip's products as critical components in life support systems is not autho-
+rized except with express written approval by Microchip. No licenses are conveyed, implicitly or otherwise, under any intellectual property rights. The Microchip logo and
+name are registered trademarks of Microchip Technology Inc. All rights reserved. All other trademarks mentioned herein are the property of their respective companies.
+
+
+
+DS20071H-page 12                                                                                                                 1996 Microchip Technology Inc.
+
+
