@@ -25,6 +25,7 @@ int16_t gx, gy, gz;
 #define LED_PIN 1
 bool blinkState = false;
 
+
 void setup() 
 {
     Serial.begin(115200);
@@ -66,7 +67,9 @@ void setup()
     pinMode(LED_PIN, OUTPUT);
 }
 
-void loop() {
+
+void loop() 
+{
   unsigned long startingTime;
   unsigned int startTag = 0xDEAD;
   

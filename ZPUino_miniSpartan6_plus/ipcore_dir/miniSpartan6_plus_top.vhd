@@ -69,20 +69,27 @@ entity miniSpartan6_plus_top is
     TXD:        out std_logic;
     RXD:        in std_logic;
 
-    DRAM_ADDR   : OUT   STD_LOGIC_VECTOR (12 downto 0);
-     DRAM_BA      : OUT   STD_LOGIC_VECTOR (1 downto 0);
-     DRAM_CAS_N   : OUT   STD_LOGIC;
-     DRAM_CKE      : OUT   STD_LOGIC;
-     DRAM_CLK      : OUT   STD_LOGIC;
-     DRAM_CS_N   : OUT   STD_LOGIC;
-     DRAM_DQ      : INOUT STD_LOGIC_VECTOR(15 downto 0);
-     DRAM_DQM      : OUT   STD_LOGIC_VECTOR(1 downto 0);
-     DRAM_RAS_N   : OUT   STD_LOGIC;
-     DRAM_WE_N    : OUT   STD_LOGIC;
+    DRAM_ADDR    : OUT   STD_LOGIC_VECTOR (12 downto 0);
+    DRAM_BA      : OUT   STD_LOGIC_VECTOR (1 downto 0);
+    DRAM_CAS_N   : OUT   STD_LOGIC;
+    DRAM_CKE     : OUT   STD_LOGIC;
+    DRAM_CLK     : OUT   STD_LOGIC;
+    DRAM_CS_N    : OUT   STD_LOGIC;
+    DRAM_DQ      : INOUT STD_LOGIC_VECTOR(15 downto 0);
+    DRAM_DQM     : OUT   STD_LOGIC_VECTOR(1 downto 0);
+    DRAM_RAS_N   : OUT   STD_LOGIC;
+    DRAM_WE_N    : OUT   STD_LOGIC;
 
     -- I2C
 	 SCL:      inout std_logic;
 	 SDA:      inout std_logic;
+	 
+	 -- ADC
+	 AD_CS		: out std_logic; 
+	 AD_SCLK		: out std_logic;
+    AD_DIN		: out std_logic;
+    AD_OUT		: in  std_logic;
+	 
 	 
     -- The LED
     LEDS:     inout std_logic_vector(7 downto 0)
@@ -246,6 +253,9 @@ architecture behave of miniSpartan6_plus_top is
   signal prom_rom_wb_stall_o:     std_logic;
 
   signal memory_enable: std_logic;
+  
+  signal adc_enabled: std_logic;
+
 
   component sdram_ctrl is
   port (
@@ -772,7 +782,7 @@ begin
   slot1: zpuino_spi
   port map (
     wb_clk_i      => wb_clk_i,
-	 	wb_rst_i      => wb_rst_i,
+	 wb_rst_i      => wb_rst_i,
     wb_dat_o      => slot_read(6),
     wb_dat_i      => slot_write(6),
     wb_adr_i      => slot_address(6),
@@ -892,10 +902,10 @@ begin
   -- IO SLOT 9
   --
 
-slot9: zpuino_empty_device
+slot9: zpuino_spi
   port map (
     wb_clk_i      => wb_clk_i,
-	 	wb_rst_i      => wb_rst_i,
+	 wb_rst_i      => wb_rst_i,
     wb_dat_o      => slot_read(9),
     wb_dat_i      => slot_write(9),
     wb_adr_i      => slot_address(9),
@@ -903,8 +913,15 @@ slot9: zpuino_empty_device
     wb_cyc_i      => slot_cyc(9),
     wb_stb_i      => slot_stb(9),
     wb_ack_o      => slot_ack(9),
-    wb_inta_o     => slot_interrupt(9)
+    wb_inta_o     => slot_interrupt(9),
+	 
+    mosi          => AD_DIN,
+    miso          => AD_OUT,
+    sck           => AD_SCLK,
+    enabled       => adc_enabled
   );
+
+   AD_CS <= not adc_enabled;  
 
 
   --
@@ -914,7 +931,7 @@ slot9: zpuino_empty_device
   slot10: zpuino_empty_device
   port map (
     wb_clk_i      => wb_clk_i,
-	 	wb_rst_i      => wb_rst_i,
+	 wb_rst_i      => wb_rst_i,
     wb_dat_o      => slot_read(10),
     wb_dat_i      => slot_write(10),
     wb_adr_i      => slot_address(10),

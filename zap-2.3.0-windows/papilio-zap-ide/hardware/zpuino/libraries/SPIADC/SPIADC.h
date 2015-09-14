@@ -8,7 +8,7 @@
 
 #include <SPI.h>
 #endif
-#define SPIADC_8BIT 0
+#define SPIADC_8BIT  0
 #define SPIADC_12BIT 1
 
 typedef unsigned char byte ;

@@ -1,6 +1,7 @@
 #ifndef __ARDUINO_H__
 #define __ARDUINO_H__
 
+#include <inttypes.h>
 #include <zpuino.h>
 #include <delay.h>
 #include <HardwareSerial.h>
@@ -35,5 +36,16 @@
 #endif
 #define abs(x) (((x) > 0) ? (x) : -(x))
 
+
+#define A0	0
+#define A1	1
+#define A2	2
+#define A3	3
+#define A4	4
+#define A5	5
+#define A6	6
+#define A7	7
+
+int analogRead(uint8_t pin);
 
 #endif

@@ -353,29 +353,6 @@ package zpuinopkg is
   );
   end component zpuino_crc16;
 
-  component zpuino_adc is
-  port (
-    wb_clk_i: in std_logic;
-	 	wb_rst_i: in std_logic;
-    wb_dat_o: out std_logic_vector(wordSize-1 downto 0);
-    wb_dat_i: in std_logic_vector(wordSize-1 downto 0);
-    wb_adr_i: in std_logic_vector(maxIObit downto minIObit);
-    wb_we_i:  in std_logic;
-    wb_cyc_i: in std_logic;
-    wb_stb_i: in std_logic;
-    wb_ack_o: out std_logic;
-    wb_inta_o:out std_logic;
-
-    sample:   in std_logic;
-    -- GPIO SPI pins
-
-    mosi:     out std_logic;
-    miso:     in std_logic;
-    sck:      out std_logic;
-    seln:     out std_logic;
-    enabled:  out std_logic
-  );
-  end component zpuino_adc;
 
   component sram_ctrl is
   port (
@@ -723,5 +700,31 @@ package zpuinopkg is
     rstout:   out std_logic
   );
   end component zpuino_serialreset;  
+
+  component zpuino_adc is
+  port (
+    wb_clk_i: in std_logic;
+	 wb_rst_i: in std_logic;
+    wb_dat_o: out std_logic_vector(wordSize-1 downto 0);
+    wb_dat_i: in std_logic_vector(wordSize-1 downto 0);
+    wb_adr_i: in std_logic_vector(maxIObit downto minIObit);
+    wb_we_i:  in std_logic;
+    wb_cyc_i: in std_logic;
+    wb_stb_i: in std_logic;
+    wb_ack_o: out std_logic;
+    wb_inta_o:out std_logic;
+
+    sample:   in std_logic;
+    -- GPIO SPI pins
+
+    mosi:     out std_logic;
+    miso:     in std_logic;
+    sck:      out std_logic;
+    seln:     out std_logic;
+    enabled:  out std_logic
+  );
+  end component zpuino_adc;
+
+
 
 end package zpuinopkg;

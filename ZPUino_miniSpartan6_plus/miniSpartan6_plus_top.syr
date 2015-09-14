@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: miniSpartan6_plus_top.prj
 
@@ -393,12 +393,12 @@ INFO:HDLCompiler:679 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir
 INFO:HDLCompiler:679 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\I2C\i2c_master_byte_ctrl.vhdl" Line 437. Case statement is complete. others clause is never selected
 
 Elaborating entity <zpuino_empty_device> (architecture <behave>) from library <work>.
-WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 145: Net <gpio_i[49]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 163: Net <slot_read[4][31]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 166: Net <slot_ack[4]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 167: Net <slot_interrupt[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 208: Net <np_ram_wb_adr_i[27]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 217: Net <sram_wb_adr_i[26]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 152: Net <gpio_i[49]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 170: Net <slot_read[4][31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 173: Net <slot_ack[4]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 174: Net <slot_interrupt[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 215: Net <np_ram_wb_adr_i[27]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 224: Net <sram_wb_adr_i[26]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -406,37 +406,37 @@ WARNING:HDLCompiler:634 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_
 
 Synthesizing Unit <miniSpartan6_plus_top>.
     Related source file is "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd".
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 352: Output port <clkout2> of the instance <clkgen_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 352: Output port <clk_1Mhz_out> of the instance <clkgen_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 418: Output port <O> of the instance <obuftx> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 419: Output port <O> of the instance <ospiclk> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 420: Output port <O> of the instance <ospics> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 421: Output port <O> of the instance <ospimosi> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 424: Output port <slot_write<4>> of the instance <zpuino> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 424: Output port <slot_write<15>> of the instance <zpuino> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 424: Output port <slot_address<4>> of the instance <zpuino> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 424: Output port <m_wb_dat_o> of the instance <zpuino> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 424: Output port <rom_wb_cti_o> of the instance <zpuino> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 424: Output port <jtag_data_chain_out> of the instance <zpuino> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 424: Output port <dbg_reset> of the instance <zpuino> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 424: Output port <m_wb_ack_o> of the instance <zpuino> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 424: Output port <m_wb_stall_o> of the instance <zpuino> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 478: Output port <s0_wb_cti_o> of the instance <memarb> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 521: Output port <s0_wb_dat_o> of the instance <bootmux> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 521: Output port <s0_wb_sel_o> of the instance <bootmux> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 521: Output port <s0_wb_cti_o> of the instance <bootmux> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 521: Output port <s1_wb_dat_o> of the instance <bootmux> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 521: Output port <s1_wb_sel_o> of the instance <bootmux> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 521: Output port <s1_wb_cti_o> of the instance <bootmux> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 521: Output port <s0_wb_we_o> of the instance <bootmux> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 521: Output port <s1_wb_we_o> of the instance <bootmux> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 572: Output port <s_wb_cti_o> of the instance <npnadapt> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 610: Output port <wb2_stall_o> of the instance <prom> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 636: Output port <enabled> of the instance <slot0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 659: Output port <enabled> of the instance <uart_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 750: Output port <raw_out> of the instance <sigmadelta_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 750: Output port <spp_en> of the instance <sigmadelta_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 772: Output port <enabled> of the instance <slot1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 362: Output port <clkout2> of the instance <clkgen_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 362: Output port <clk_1Mhz_out> of the instance <clkgen_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 428: Output port <O> of the instance <obuftx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 429: Output port <O> of the instance <ospiclk> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 430: Output port <O> of the instance <ospics> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 431: Output port <O> of the instance <ospimosi> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 434: Output port <slot_write<4>> of the instance <zpuino> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 434: Output port <slot_write<15>> of the instance <zpuino> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 434: Output port <slot_address<4>> of the instance <zpuino> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 434: Output port <m_wb_dat_o> of the instance <zpuino> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 434: Output port <rom_wb_cti_o> of the instance <zpuino> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 434: Output port <jtag_data_chain_out> of the instance <zpuino> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 434: Output port <dbg_reset> of the instance <zpuino> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 434: Output port <m_wb_ack_o> of the instance <zpuino> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 434: Output port <m_wb_stall_o> of the instance <zpuino> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 488: Output port <s0_wb_cti_o> of the instance <memarb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 531: Output port <s0_wb_dat_o> of the instance <bootmux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 531: Output port <s0_wb_sel_o> of the instance <bootmux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 531: Output port <s0_wb_cti_o> of the instance <bootmux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 531: Output port <s1_wb_dat_o> of the instance <bootmux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 531: Output port <s1_wb_sel_o> of the instance <bootmux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 531: Output port <s1_wb_cti_o> of the instance <bootmux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 531: Output port <s0_wb_we_o> of the instance <bootmux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 531: Output port <s1_wb_we_o> of the instance <bootmux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 582: Output port <s_wb_cti_o> of the instance <npnadapt> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 620: Output port <wb2_stall_o> of the instance <prom> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 646: Output port <enabled> of the instance <slot0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 669: Output port <enabled> of the instance <uart_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 760: Output port <raw_out> of the instance <sigmadelta_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 760: Output port <spp_en> of the instance <sigmadelta_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" line 782: Output port <enabled> of the instance <slot1> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <gpio_i<49:48>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <slot_read<4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <slot_read<8><31:8>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -444,8 +444,8 @@ WARNING:Xst:653 - Signal <slot_ack<4>> is used but never assigned. This sourcele
 WARNING:Xst:653 - Signal <slot_interrupt<15>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <np_ram_wb_adr_i<27:23>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <sram_wb_adr_i<26:23>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 1-bit tristate buffer for signal <SCL> created at line 878
-    Found 1-bit tristate buffer for signal <SDA> created at line 880
+    Found 1-bit tristate buffer for signal <SCL> created at line 888
+    Found 1-bit tristate buffer for signal <SDA> created at line 890
     Summary:
 	inferred   2 Tristate(s).
 Unit <miniSpartan6_plus_top> synthesized.
@@ -1661,8 +1661,8 @@ Macro Statistics
  8x1-bit single-port Read Only RAM                     : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 39
- 10-bit adder                                          : 3
+# Adders/Subtractors                                   : 41
+ 10-bit adder                                          : 4
  11-bit adder                                          : 5
  11-bit addsub                                         : 1
  11-bit subtractor                                     : 1
@@ -1677,29 +1677,29 @@ Macro Statistics
  32-bit subtractor                                     : 1
  4-bit adder                                           : 3
  5-bit adder                                           : 1
- 6-bit subtractor                                      : 2
+ 6-bit subtractor                                      : 3
  7-bit subtractor                                      : 1
  8-bit addsub                                          : 1
-# Registers                                            : 384
- 1-bit register                                        : 157
- 10-bit register                                       : 5
+# Registers                                            : 413
+ 1-bit register                                        : 179
+ 10-bit register                                       : 6
  11-bit register                                       : 4
  12-bit register                                       : 2
  128-bit register                                      : 3
  15-bit register                                       : 1
  16-bit register                                       : 19
  18-bit register                                       : 11
- 2-bit register                                        : 11
+ 2-bit register                                        : 12
  21-bit register                                       : 1
  23-bit register                                       : 6
  26-bit register                                       : 1
  28-bit register                                       : 1
- 3-bit register                                        : 10
- 32-bit register                                       : 19
+ 3-bit register                                        : 12
+ 32-bit register                                       : 21
  4-bit register                                        : 6
  5-bit register                                        : 4
  50-bit register                                       : 1
- 6-bit register                                        : 5
+ 6-bit register                                        : 6
  64-bit register                                       : 4
  7-bit register                                        : 99
  8-bit register                                        : 14
@@ -1717,12 +1717,12 @@ Macro Statistics
  8-bit comparator greater                              : 1
  8-bit comparator lessequal                            : 1
  9-bit comparator equal                                : 1
-# Multiplexers                                         : 3237
- 1-bit 2-to-1 multiplexer                              : 2960
+# Multiplexers                                         : 3261
+ 1-bit 2-to-1 multiplexer                              : 2979
  1-bit 3-to-1 multiplexer                              : 4
- 1-bit 4-to-1 multiplexer                              : 3
+ 1-bit 4-to-1 multiplexer                              : 4
  1-bit 50-to-1 multiplexer                             : 48
- 1-bit 8-to-1 multiplexer                              : 4
+ 1-bit 8-to-1 multiplexer                              : 5
  10-bit 2-to-1 multiplexer                             : 1
  11-bit 2-to-1 multiplexer                             : 13
  12-bit 2-to-1 multiplexer                             : 14
@@ -1738,14 +1738,14 @@ Macro Statistics
  23-bit 4-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 4
  32-bit 16-to-1 multiplexer                            : 1
- 32-bit 2-to-1 multiplexer                             : 71
+ 32-bit 2-to-1 multiplexer                             : 73
  32-bit 3-to-1 multiplexer                             : 2
  32-bit 4-to-1 multiplexer                             : 5
  4-bit 2-to-1 multiplexer                              : 24
  4-bit 6-to-1 multiplexer                              : 1
  5-bit 2-to-1 multiplexer                              : 7
  5-bit 4-to-1 multiplexer                              : 1
- 6-bit 2-to-1 multiplexer                              : 9
+ 6-bit 2-to-1 multiplexer                              : 10
  6-bit 4-to-1 multiplexer                              : 1
  7-bit 2-to-1 multiplexer                              : 2
  8-bit 2-to-1 multiplexer                              : 5
@@ -1753,8 +1753,8 @@ Macro Statistics
 # Tristates                                            : 100
  1-bit tristate buffer                                 : 100
 # FSMs                                                 : 9
-# Xors                                                 : 44
- 1-bit xor2                                            : 39
+# Xors                                                 : 45
+ 1-bit xor2                                            : 40
  16-bit xor2                                           : 1
  32-bit xor2                                           : 4
 
@@ -2260,8 +2260,8 @@ Macro Statistics
  3-bit subtractor                                      : 2
  32-bit adder                                          : 3
  4-bit adder                                           : 1
-# Counters                                             : 18
- 10-bit up counter                                     : 3
+# Counters                                             : 20
+ 10-bit up counter                                     : 4
  11-bit up counter                                     : 2
  15-bit down counter                                   : 1
  16-bit updown counter                                 : 1
@@ -2271,14 +2271,14 @@ Macro Statistics
  32-bit up counter                                     : 1
  4-bit up counter                                      : 2
  5-bit up counter                                      : 1
- 6-bit down counter                                    : 2
+ 6-bit down counter                                    : 3
  7-bit down counter                                    : 1
  8-bit updown counter                                  : 1
 # Accumulators                                         : 3
  11-bit updown loadable accumulator                    : 1
  18-bit up loadable accumulator                        : 2
-# Registers                                            : 2613
- Flip-Flops                                            : 2613
+# Registers                                            : 2707
+ Flip-Flops                                            : 2707
 # Comparators                                          : 16
  11-bit comparator equal                               : 2
  12-bit comparator equal                               : 1
@@ -2293,12 +2293,12 @@ Macro Statistics
  8-bit comparator greater                              : 1
  8-bit comparator lessequal                            : 1
  9-bit comparator equal                                : 1
-# Multiplexers                                         : 3285
- 1-bit 2-to-1 multiplexer                              : 3029
+# Multiplexers                                         : 3339
+ 1-bit 2-to-1 multiplexer                              : 3080
  1-bit 3-to-1 multiplexer                              : 4
- 1-bit 4-to-1 multiplexer                              : 3
+ 1-bit 4-to-1 multiplexer                              : 4
  1-bit 50-to-1 multiplexer                             : 48
- 1-bit 8-to-1 multiplexer                              : 4
+ 1-bit 8-to-1 multiplexer                              : 5
  11-bit 2-to-1 multiplexer                             : 12
  12-bit 2-to-1 multiplexer                             : 14
  128-bit 2-to-1 multiplexer                            : 3
@@ -2312,7 +2312,7 @@ Macro Statistics
  23-bit 4-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 2
  32-bit 16-to-1 multiplexer                            : 1
- 32-bit 2-to-1 multiplexer                             : 67
+ 32-bit 2-to-1 multiplexer                             : 68
  32-bit 3-to-1 multiplexer                             : 2
  32-bit 4-to-1 multiplexer                             : 5
  4-bit 2-to-1 multiplexer                              : 22
@@ -2325,8 +2325,8 @@ Macro Statistics
  8-bit 2-to-1 multiplexer                              : 3
  8-bit 4-to-1 multiplexer                              : 1
 # FSMs                                                 : 9
-# Xors                                                 : 44
- 1-bit xor2                                            : 39
+# Xors                                                 : 45
+ 1-bit xor2                                            : 40
  16-bit xor2                                           : 1
  32-bit xor2                                           : 4
 
@@ -2343,8 +2343,8 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbgr_injectmode> (w
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbgr_inject> (without init value) has a constant value of 0 in block <zpuino_debug_core>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbgr_flush> (without init value) has a constant value of 0 in block <zpuino_debug_core>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <cache/cyc> in Unit <zpu_core_extreme_icache> is equivalent to the following FF/Latch, which will be removed : <cache/stb> 
-INFO:Xst:2261 - The FF/Latch <intr_in_q_9> in Unit <zpuino_intr> is equivalent to the following 8 FFs/Latches, which will be removed : <intr_in_q_10> <intr_in_q_11> <intr_in_q_12> <intr_in_q_13> <intr_in_q_14> <intr_in_q_15> <intr_in_q_16> <intr_in_q_17> 
-WARNING:Xst:1710 - FF/Latch <intr_in_q_9> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <intr_in_q_10> in Unit <zpuino_intr> is equivalent to the following 7 FFs/Latches, which will be removed : <intr_in_q_11> <intr_in_q_12> <intr_in_q_13> <intr_in_q_14> <intr_in_q_15> <intr_in_q_16> <intr_in_q_17> 
+WARNING:Xst:1710 - FF/Latch <intr_in_q_10> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <decr_im_emu> (without init value) has a constant value of 0 in block <zpu_core_extreme_icache>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <zpuino/core/FSM_2> on signal <state[1:3]> with user encoding.
@@ -2649,9 +2649,16 @@ Optimizing unit <miniSpartan6_plus_top> ...
 
 Optimizing unit <clkgen> ...
 
+Optimizing unit <zpuino_spi> ...
+
+Optimizing unit <spi> ...
+
+Optimizing unit <spiclkgen> ...
+
+Optimizing unit <prescaler> ...
+
 Optimizing unit <zpuino_intr> ...
-WARNING:Xst:1710 - FF/Latch <intr_detected_q_9> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_detected_q_10> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <intr_detected_q_10> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_detected_q_11> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_detected_q_12> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_detected_q_13> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
@@ -2659,8 +2666,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_detected_q_14>
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_detected_q_15> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_detected_q_16> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_detected_q_17> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <intr_served_q_9> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_served_q_10> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <intr_served_q_10> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_served_q_11> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_served_q_12> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <intr_served_q_13> (without init value) has a constant value of 0 in block <zpuino_intr>. This FF/Latch will be trimmed during the optimization process.
@@ -2675,14 +2681,6 @@ Optimizing unit <zpuino_lsu> ...
 Optimizing unit <lshifter> ...
 
 Optimizing unit <wbarb2_1_2> ...
-
-Optimizing unit <zpuino_spi> ...
-
-Optimizing unit <spi> ...
-
-Optimizing unit <spiclkgen> ...
-
-Optimizing unit <prescaler> ...
 
 Optimizing unit <zpuino_uart> ...
 
@@ -2711,12 +2709,14 @@ Optimizing unit <I2C_MasterTop> ...
 Optimizing unit <I2C_MasterByteCtrl> ...
 
 Optimizing unit <I2C_MasterBitCtrl> ...
+WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_detected_q_9> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_detected_q_7> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_detected_q_6> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_detected_q_5> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_detected_q_2> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_detected_q_1> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_detected_q_0> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_in_q_9> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_in_q_7> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_in_q_6> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_in_q_5> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
@@ -3086,6 +3086,7 @@ WARNING:Xst:2677 - Node <gpio_inst/output_mapper_q_2_3> of sequential type is un
 WARNING:Xst:2677 - Node <gpio_inst/output_mapper_q_2_2> of sequential type is unconnected in block <miniSpartan6_plus_top>.
 WARNING:Xst:2677 - Node <gpio_inst/output_mapper_q_2_1> of sequential type is unconnected in block <miniSpartan6_plus_top>.
 WARNING:Xst:2677 - Node <gpio_inst/output_mapper_q_2_0> of sequential type is unconnected in block <miniSpartan6_plus_top>.
+WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_served_q_9> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_served_q_7> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_served_q_6> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <zpuino/io/intr_inst/intr_served_q_5> (without init value) has a constant value of 0 in block <miniSpartan6_plus_top>. This FF/Latch will be trimmed during the optimization process.
@@ -3122,7 +3123,7 @@ INFO:Xst:2261 - The FF/Latch <slot8/byte_ctrl/bit_ctrl/c_state_FSM_FFd1> in Unit
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block miniSpartan6_plus_top, actual ratio is 31.
+Found area constraint ratio of 100 (+ 5) on block miniSpartan6_plus_top, actual ratio is 32.
 Replicating register sram_inst/ctrl/r_address_11 to handle IOB=TRUE attribute
 Replicating register sram_inst/ctrl/r_address_10 to handle IOB=TRUE attribute
 Replicating register sram_inst/ctrl/r_address_9 to handle IOB=TRUE attribute
@@ -3196,8 +3197,8 @@ Unit <miniSpartan6_plus_top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2305
- Flip-Flops                                            : 2305
+# Registers                                            : 2415
+ Flip-Flops                                            : 2415
 # Shift Registers                                      : 34
  2-bit shift register                                  : 17
  3-bit shift register                                  : 17
@@ -3223,29 +3224,29 @@ Top Level Output File Name         : miniSpartan6_plus_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4056
+# BELS                             : 4190
 #      GND                         : 1
-#      INV                         : 49
-#      LUT1                        : 141
-#      LUT2                        : 125
-#      LUT3                        : 521
-#      LUT4                        : 603
-#      LUT5                        : 465
-#      LUT6                        : 1226
+#      INV                         : 52
+#      LUT1                        : 150
+#      LUT2                        : 132
+#      LUT3                        : 536
+#      LUT4                        : 611
+#      LUT5                        : 471
+#      LUT6                        : 1287
 #      MULT_AND                    : 22
-#      MUXCY                       : 443
-#      MUXF7                       : 54
+#      MUXCY                       : 452
+#      MUXF7                       : 60
 #      VCC                         : 1
-#      XORCY                       : 405
-# FlipFlops/Latches                : 2340
-#      FD                          : 313
+#      XORCY                       : 415
+# FlipFlops/Latches                : 2450
+#      FD                          : 316
 #      FD_1                        : 16
-#      FDE                         : 1244
+#      FDE                         : 1315
 #      FDP                         : 2
-#      FDR                         : 178
-#      FDRE                        : 425
-#      FDS                         : 107
-#      FDSE                        : 54
+#      FDR                         : 202
+#      FDRE                        : 435
+#      FDS                         : 108
+#      FDSE                        : 55
 #      ODDR2                       : 1
 # RAMS                             : 12
 #      RAMB16BWER                  : 11
@@ -3254,11 +3255,11 @@ Primitive and Black Box Usage:
 #      SRLC16E                     : 34
 # Clock Buffers                    : 5
 #      BUFG                        : 5
-# IO Buffers                       : 96
-#      IBUF                        : 2
+# IO Buffers                       : 100
+#      IBUF                        : 3
 #      IBUFG                       : 1
 #      IOBUF                       : 66
-#      OBUF                        : 27
+#      OBUF                        : 30
 # DCMs                             : 1
 #      DCM_SP                      : 1
 # DSPs                             : 4
@@ -3273,22 +3274,22 @@ Selected Device : 6slx25ftg256-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2289  out of  30064     7%  
- Number of Slice LUTs:                 3164  out of  15032    21%  
-    Number used as Logic:              3130  out of  15032    20%  
+ Number of Slice Registers:            2399  out of  30064     7%  
+ Number of Slice LUTs:                 3273  out of  15032    21%  
+    Number used as Logic:              3239  out of  15032    21%  
     Number used as Memory:               34  out of   3664     0%  
        Number used as SRL:               34
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4253
-   Number with an unused Flip Flop:    1964  out of   4253    46%  
-   Number with an unused LUT:          1089  out of   4253    25%  
-   Number of fully used LUT-FF pairs:  1200  out of   4253    28%  
-   Number of unique control sets:       141
+ Number of LUT Flip Flop pairs used:   4420
+   Number with an unused Flip Flop:    2021  out of   4420    45%  
+   Number with an unused LUT:          1147  out of   4420    25%  
+   Number of fully used LUT-FF pairs:  1252  out of   4420    28%  
+   Number of unique control sets:       149
 
 IO Utilization: 
- Number of IOs:                          96
- Number of bonded IOBs:                  96  out of    186    51%  
+ Number of IOs:                         100
+ Number of bonded IOBs:                 100  out of    186    53%  
     IOB Flip Flops/Latches:              51
 
 Specific Feature Utilization:
@@ -3319,7 +3320,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | PLL_ADV:CLKOUT0        | 2389  |
+CLK                                | PLL_ADV:CLKOUT0        | 2499  |
 CLK                                | PLL_ADV:CLKOUT1        | 2     |
 -----------------------------------+------------------------+-------+
 
@@ -3333,7 +3334,7 @@ Speed Grade: -3
 
    Minimum period: 27.883ns (Maximum Frequency: 35.864MHz)
    Minimum input arrival time before clock: 2.109ns
-   Maximum output required time after clock: 4.022ns
+   Maximum output required time after clock: 4.419ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -3343,7 +3344,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 27.883ns (frequency: 35.864MHz)
-  Total number of paths / destination ports: 126062 / 5412
+  Total number of paths / destination ports: 127397 / 5639
 -------------------------------------------------------------------------
 Delay:               9.294ns (Levels of Logic = 9)
   Source:            zpuino/core/exr_state_FSM_FFd3_1 (FF)
@@ -3357,7 +3358,7 @@ Delay:               9.294ns (Levels of Logic = 9)
     ----------------------------------------  ------------
      FDR:C->Q              1   0.447   0.924  zpuino/core/exr_state_FSM_FFd3_1 (zpuino/core/exr_state_FSM_FFd3_1)
      LUT5:I0->O            2   0.203   0.981  zpuino/core/Mmux_stack_a_enable1121_1 (zpuino/core/Mmux_stack_a_enable1121)
-     LUT6:I0->O            1   0.203   0.000  zpuino/core/Mmux_lsu_req1_G (N594)
+     LUT6:I0->O            1   0.203   0.000  zpuino/core/Mmux_lsu_req1_G (N606)
      MUXF7:I1->O           3   0.140   0.651  zpuino/core/Mmux_lsu_req1 (zpuino/core/lsu_req)
      LUT6:I5->O            9   0.205   0.830  zpuino/core/lsu/Mmux_busy1 (zpuino/core/lsu_busy)
      LUT6:I5->O            8   0.205   0.803  zpuino/core/_n13545 (zpuino/core/_n13545)
@@ -3372,7 +3373,7 @@ Delay:               9.294ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 68 / 68
+  Total number of paths / destination ports: 69 / 69
 -------------------------------------------------------------------------
 Offset:              2.109ns (Levels of Logic = 2)
   Source:            SDA (PAD)
@@ -3383,7 +3384,7 @@ Offset:              2.109ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           1   1.222   0.580  SDA_IOBUF (N364)
+     IOBUF:IO->O           1   1.222   0.580  SDA_IOBUF (N368)
      LUT3:I2->O            1   0.205   0.000  slot8/byte_ctrl/bit_ctrl/Mmux_sda_i_PWR_211_o_MUX_1512_o11 (slot8/byte_ctrl/bit_ctrl/sda_i_PWR_211_o_MUX_1512_o)
      FD:D                      0.102          slot8/byte_ctrl/bit_ctrl/ssda
     ----------------------------------------
@@ -3392,22 +3393,23 @@ Offset:              2.109ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 153 / 89
+  Total number of paths / destination ports: 156 / 92
 -------------------------------------------------------------------------
-Offset:              4.022ns (Levels of Logic = 1)
-  Source:            sram_inst/ctrl/r_tristate (FF)
-  Destination:       DRAM_DQ<15> (PAD)
+Offset:              4.419ns (Levels of Logic = 2)
+  Source:            slot9/spi_enable_q (FF)
+  Destination:       AD_CS (PAD)
   Source Clock:      CLK rising 3.0X
 
-  Data Path: sram_inst/ctrl/r_tristate to DRAM_DQ<15>
+  Data Path: slot9/spi_enable_q to AD_CS
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q             16   0.447   1.004  sram_inst/ctrl/r_tristate (sram_inst/ctrl/r_tristate)
-     IOBUF:T->IO               2.571          DRAM_DQ_15_IOBUF (DRAM_DQ<15>)
+     FDRE:C->Q             2   0.447   0.616  slot9/spi_enable_q (slot9/spi_enable_q)
+     INV:I->O              1   0.206   0.579  AD_CS1_INV_0 (AD_CS_OBUF)
+     OBUF:I->O                 2.571          AD_CS_OBUF (AD_CS)
     ----------------------------------------
-    Total                      4.022ns (3.018ns logic, 1.004ns route)
-                                       (75.0% logic, 25.0% route)
+    Total                      4.419ns (3.224ns logic, 1.195ns route)
+                                       (73.0% logic, 27.0% route)
 
 =========================================================================
 
@@ -3426,13 +3428,13 @@ CLK            |    9.294|    1.165|         |         |
 
 
 Total REAL time to Xst completion: 43.00 secs
-Total CPU time to Xst completion: 43.55 secs
+Total CPU time to Xst completion: 43.06 secs
  
 --> 
 
-Total memory usage is 395336 kilobytes
+Total memory usage is 396300 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  902 (   0 filtered)
+Number of warnings :  903 (   0 filtered)
 Number of infos    :   72 (   0 filtered)
 
