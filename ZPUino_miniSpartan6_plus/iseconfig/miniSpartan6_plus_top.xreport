@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-09-14T23:30:09</DateModified>
+  <DateModified>2015-10-18T00:21:29</DateModified>
   <ModuleName>miniSpartan6_plus_top</ModuleName>
-  <SummaryTimeStamp>2015-04-10T02:16:00</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-09-24T02:32:37</SummaryTimeStamp>
   <SavedFilePath>C:/FPGA/miniSpartan6/ZPUino_miniSpartan6_plus/iseconfig/miniSpartan6_plus_top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/FPGA/miniSpartan6/ZPUino_miniSpartan6_plus\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-10T02:05:20</DateInitialized>

@@ -1,10 +1,14 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Sep 15 00:21:17 2015
+Sun Oct 18 00:29:26 2015
 
 drc -z miniSpartan6_plus_top.ncd miniSpartan6_plus_top.pcf
 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   slot12/wb_adr_i[5]_PWR_217_o_Mux_2_o is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
 WARNING:PhysDesignRules:1176 - Issue with pin connections and/or configuration
    on block:<zpuino/core/cache/cachemem/Mram_RAM1>:<RAMB16BWER_RAMB16BWER>.  The
    block is configured to use input parity pin DIBP0. There is dangling output
@@ -21,5 +25,5 @@ WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
    (RAMB8BWER).  9K Block RAM initialization data, both user defined and
    default, may be incorrect and should not be used.  For more information,
    please reference Xilinx Answer Record 39999.
-DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+DRC detected 0 errors and 5 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

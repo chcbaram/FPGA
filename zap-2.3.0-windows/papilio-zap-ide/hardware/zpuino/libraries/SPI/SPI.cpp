@@ -86,6 +86,14 @@ void SPIClass::setClockDivider(int rate)
     // USPICTL = (USPICTL & ~SPI_CLOCK_MASK) | rate;
 }
 
+void SPIClass::begin_bit() {
+    REGISTER(IO_SLOT(wishboneSlot),0) = REGISTER(IO_SLOT(wishboneSlot),0) |  BIT(SPIEN)|BIT(SPIBLOCK);
+}
+
+void SPIClass::end_bit() {
+    REGISTER(IO_SLOT(wishboneSlot),0) = REGISTER(IO_SLOT(wishboneSlot),0) |  BIT(SPIEN);
+}
+
 
 SPIClass::SPIClass()
 {

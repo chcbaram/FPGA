@@ -51,6 +51,7 @@ use Work.I2C_Master.all;
 entity miniSpartan6_plus_top is
   port (
     CLK:        in std_logic;
+	 CLK50:      in std_logic;
 
     -- Connection to the main SPI flash
     SPI_SCK:    out std_logic;
@@ -81,16 +82,36 @@ entity miniSpartan6_plus_top is
     DRAM_WE_N    : OUT   STD_LOGIC;
 
     -- I2C
-	 SCL:      inout std_logic;
-	 SDA:      inout std_logic;
+	SCL:      inout std_logic;
+	SDA:      inout std_logic;
 	 
 	 -- ADC
-	 AD_CS		: out std_logic; 
-	 AD_SCLK		: out std_logic;
-    AD_DIN		: out std_logic;
+	AD_CS		: out std_logic; 
+	AD_SCLK		: out std_logic;
+	AD_DIN		: out std_logic;
     AD_OUT		: in  std_logic;
 	 
+    -- UART1 Bluetooth
+    TXD1       : out std_logic;
+    RXD1       : in  std_logic;	 
 	 
+	SPI2_CS    : out std_logic;
+	 
+	 
+	 -- OV7670 Camera
+	OV7670_VSYNC	: in  std_logic;
+	OV7670_HREF		: in  std_logic;
+	OV7670_PCLK		: in  std_logic;
+	OV7670_XCLK		: out std_logic;
+	OV7670_D		: in  std_logic_vector( 7 downto 0 );
+	 
+	-- ENCODER
+	ENCODER_A_A		: in  std_logic;
+	ENCODER_A_B		: in  std_logic;
+	ENCODER_B_A		: in  std_logic;
+	ENCODER_B_B		: in  std_logic;
+	
+	
     -- The LED
     LEDS:     inout std_logic_vector(7 downto 0)
   );
@@ -184,7 +205,8 @@ architecture behave of miniSpartan6_plus_top is
 
   -- Timer connections
   signal timers_interrupt:  std_logic_vector(1 downto 0);
-  signal timers_pwm:        std_logic_vector(1 downto 0);
+  signal timers_pwm_a:        std_logic_vector(1 downto 0);
+  signal timers_pwm_b:        std_logic_vector(1 downto 0);
 
   -- Sigmadelta output
   signal sigmadelta_spp_data: std_logic_vector(1 downto 0);
@@ -198,6 +220,9 @@ architecture behave of miniSpartan6_plus_top is
   signal rx: std_logic;
   signal tx: std_logic;
   signal sysclk_sram_we, sysclk_sram_wen: std_ulogic;
+
+  signal rx1: std_logic;
+  signal tx1: std_logic;
 
   signal ram_wb_ack_o:       std_logic;
   signal ram_wb_dat_i:       std_logic_vector(wordSize-1 downto 0);
@@ -254,8 +279,8 @@ architecture behave of miniSpartan6_plus_top is
 
   signal memory_enable: std_logic;
   
-  signal adc_enabled: std_logic;
-
+  signal adc_enabled:   std_logic;
+  signal spi2_enabled:  std_logic;
 
   component sdram_ctrl is
   port (
@@ -339,6 +364,7 @@ architecture behave of miniSpartan6_plus_top is
 
    signal sdar            : std_logic; -- i2c data line
    signal sclr            : std_logic; -- i2c data line
+
 
 
 
@@ -430,6 +456,11 @@ begin
   ospics:   OPAD port map ( I => gpio_o(48),   PAD => SPI_CS );
   ospimosi: OPAD port map ( I => spi_pf_mosi,  PAD => SPI_MOSI );
   --oled:     OPAD port map ( I => gpio_o(49),   PAD => LED );
+
+
+  ibufrx1:  IPAD port map ( PAD => RXD1,       O   => rx1,          C => sysclk );
+  obuftx1:  OPAD port map ( I   => tx1,        PAD => TXD1 );
+
 
   zpuino:zpuino_top_icache
     port map (
@@ -669,7 +700,7 @@ begin
   uart_inst: zpuino_uart
   port map (
     wb_clk_i      => wb_clk_i,
-	 	wb_rst_i      => wb_rst_i,
+	 wb_rst_i      => wb_rst_i,
     wb_dat_o      => slot_read(1),
     wb_dat_i      => slot_write(1),
     wb_adr_i      => slot_address(1),
@@ -726,10 +757,10 @@ begin
     A_PRESCALER_ENABLED => true,
     A_BUFFERS           => true,
     B_TSCENABLED        => false,
-    B_PWMCOUNT          => 1,
-    B_WIDTH             => 8,--24,
-    B_PRESCALER_ENABLED => false,
-    B_BUFFERS           => false
+    B_PWMCOUNT          => 2,
+    B_WIDTH             => 8,      -- 24,
+    B_PRESCALER_ENABLED => true,   -- false
+    B_BUFFERS           => true    -- false
   )
   port map (
     wb_clk_i      => wb_clk_i,
@@ -745,8 +776,8 @@ begin
     wb_inta_o     => slot_interrupt(3), -- We use two interrupt lines
     wb_intb_o     => slot_interrupt(4), -- so we borrow intr line from slot 4
 
-    pwm_a_out   => timers_pwm(0 downto 0),
-    pwm_b_out   => timers_pwm(1 downto 1)
+    pwm_a_out   => timers_pwm_a(0 downto 0),
+    pwm_b_out   => timers_pwm_b(1 downto 0)
   );
 
   --
@@ -795,9 +826,10 @@ begin
     mosi          => spi2_mosi,
     miso          => spi2_miso,
     sck           => spi2_sck,
-    enabled       => open
+    enabled       => spi2_enabled
   );
 
+  SPI2_CS <= not spi2_enabled;
 
 
   --
@@ -927,8 +959,7 @@ slot9: zpuino_spi
   --
   -- IO SLOT 10
   --
-
-  slot10: zpuino_empty_device
+  slot10: zpuino_uart
   port map (
     wb_clk_i      => wb_clk_i,
 	 wb_rst_i      => wb_rst_i,
@@ -939,17 +970,22 @@ slot9: zpuino_spi
     wb_cyc_i      => slot_cyc(10),
     wb_stb_i      => slot_stb(10),
     wb_ack_o      => slot_ack(10),
-    wb_inta_o     => slot_interrupt(10)
+    wb_inta_o     => slot_interrupt(10),
+
+    enabled       => open,
+    tx            => tx1,
+    rx            => rx1
   );
+
 
   --
   -- IO SLOT 11
   --
 
-  slot11: zpuino_empty_device
+  slot11: zpuino_encoder
   port map (
     wb_clk_i      => wb_clk_i,
-	 	wb_rst_i      => wb_rst_i,
+	wb_rst_i      => wb_rst_i,
     wb_dat_o      => slot_read(11),
     wb_dat_i      => slot_write(11),
     wb_adr_i      => slot_address(11),
@@ -957,17 +993,23 @@ slot9: zpuino_spi
     wb_cyc_i      => slot_cyc(11),
     wb_stb_i      => slot_stb(11),
     wb_ack_o      => slot_ack(11),
-    wb_inta_o     => slot_interrupt(11)
+    wb_inta_o     => slot_interrupt(11),
+	
+	ENCODER_A(0)  => ENCODER_A_A,
+	ENCODER_A(1)  => ENCODER_B_A,
+	ENCODER_B(0)  => ENCODER_A_B,
+	ENCODER_B(1)  => ENCODER_B_B
+	
   );
 
   --
   -- IO SLOT 12
   --
 
-  slot12: zpuino_empty_device
+  slot12: zpuino_ov7670
   port map (
     wb_clk_i      => wb_clk_i,
-	 	wb_rst_i      => wb_rst_i,
+	wb_rst_i      => wb_rst_i,
     wb_dat_o      => slot_read(12),
     wb_dat_i      => slot_write(12),
     wb_adr_i      => slot_address(12),
@@ -975,8 +1017,19 @@ slot9: zpuino_spi
     wb_cyc_i      => slot_cyc(12),
     wb_stb_i      => slot_stb(12),
     wb_ack_o      => slot_ack(12),
-    wb_inta_o     => slot_interrupt(12)
+    wb_inta_o     => slot_interrupt(12),
+	
+	
+	CLK50        	=> CLK50,
+	OV7670_VSYNC 	=> OV7670_VSYNC,
+	OV7670_HREF  	=> OV7670_HREF,
+	OV7670_PCLK  	=> OV7670_PCLK,
+	OV7670_XCLK  	=> OV7670_XCLK,
+	OV7670_D     	=> OV7670_D
+	
   );
+
+
 
   --
   -- IO SLOT 13
@@ -1019,7 +1072,7 @@ slot9: zpuino_spi
   --
 
   process(gpio_spp_read, spi_pf_mosi, spi_pf_sck,
-          sigmadelta_spp_data,timers_pwm,
+          sigmadelta_spp_data,timers_pwm_a,timers_pwm_b,
           spi2_mosi,spi2_sck)
   begin
 
@@ -1027,8 +1080,8 @@ slot9: zpuino_spi
 
     -- PPS Outputs
     gpio_spp_data(0)  <= sigmadelta_spp_data(0);   -- PPS0 : SIGMADELTA DATA
-    gpio_spp_data(1)  <= timers_pwm(0);            -- PPS1 : TIMER0
-    gpio_spp_data(2)  <= timers_pwm(1);            -- PPS2 : TIMER1
+    gpio_spp_data(1)  <= timers_pwm_b(0);          -- PPS1 : TIMER1_0
+    gpio_spp_data(2)  <= timers_pwm_b(1);          -- PPS2 : TIMER1_1
     gpio_spp_data(3)  <= spi2_mosi;                -- PPS3 : USPI MOSI
     gpio_spp_data(4)  <= spi2_sck;                 -- PPS4 : USPI SCK
     gpio_spp_data(5)  <= sigmadelta_spp_data(1); -- PPS5 : SIGMADELTA1 DATA	

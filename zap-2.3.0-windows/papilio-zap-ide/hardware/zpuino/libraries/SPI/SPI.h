@@ -64,6 +64,9 @@ public:
   void begin(int wishboneSlot);
   void end();
 
+  void begin_bit();
+  void end_bit();
+
   void setBitOrder(int);
   void setDataMode(int);
   void setClockDivider(int);

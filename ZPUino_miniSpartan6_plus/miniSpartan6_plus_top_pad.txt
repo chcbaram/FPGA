@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Sep 15 00:21:05 2015
+Sun Oct 18 00:29:14 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -53,11 +53,11 @@ Pinout by Pin Number:
 |B15       |DRAM_DQ<13>  |IOB      |IO_L29P_A23_M1A13_1          |BIDIR    |LVTTL      |1             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |B16       |DRAM_DQ<12>  |IOB      |IO_L29N_A22_M1A14_1          |BIDIR    |LVTTL      |1             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |C1        |             |IOBM     |IO_L50P_M3WE_3               |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
-|C2        |             |IOBS     |IO_L48N_M3BA1_3              |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
+|C2        |OV7670_D<4>  |IOB      |IO_L48N_M3BA1_3              |INPUT    |LVTTL      |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |C3        |PORTE<7>     |IOB      |IO_L48P_M3BA0_3              |BIDIR    |LVTTL      |3             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |C4        |             |IOBM     |IO_L1P_HSWAPEN_0             |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
-|C5        |             |IOBS     |IO_L3N_0                     |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
-|C6        |             |IOBS     |IO_L7N_0                     |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
+|C5        |OV7670_D<3>  |IOB      |IO_L3N_0                     |INPUT    |LVTTL      |0             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|C6        |OV7670_D<1>  |IOB      |IO_L7N_0                     |INPUT    |LVTTL      |0             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |C7        |             |IOBM     |IO_L6P_0                     |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |C8        |SDA          |IOB      |IO_L38N_VREF_0               |BIDIR    |LVTTL      |0             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |C9        |             |IOBM     |IO_L34P_GCLK19_0             |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
@@ -68,12 +68,12 @@ Pinout by Pin Number:
 |C14       |             |         |TCK                          |         |           |              |          |         |           |         |       |          |           |                |
 |C15       |DRAM_DQ<15>  |IOB      |IO_L33P_A15_M1A10_1          |BIDIR    |LVTTL      |1             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |C16       |DRAM_DQ<14>  |IOB      |IO_L33N_A14_M1A4_1           |BIDIR    |LVTTL      |1             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
-|D1        |             |IOBS     |IO_L49N_M3A2_3               |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
+|D1        |OV7670_D<6>  |IOB      |IO_L49N_M3A2_3               |INPUT    |LVTTL      |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |D2        |             |         |VCCO_3                       |         |           |3             |          |         |           |         |3.30   |          |           |                |
-|D3        |             |IOBM     |IO_L49P_M3A7_3               |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
+|D3        |OV7670_D<5>  |IOB      |IO_L49P_M3A7_3               |INPUT    |LVTTL      |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |D4        |             |         |GND                          |         |           |              |          |         |           |         |       |          |           |                |
 |D5        |PORTE<0>     |IOB      |IO_L3P_0                     |BIDIR    |LVTTL      |0             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
-|D6        |             |IOBM     |IO_L7P_0                     |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
+|D6        |OV7670_D<0>  |IOB      |IO_L7P_0                     |INPUT    |LVTTL      |0             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |D7        |             |         |VCCO_0                       |         |           |0             |          |         |           |         |3.30   |          |           |                |
 |D8        |             |IOBM     |IO_L38P_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |D9        |PORTA<4>     |IOB      |IO_L40N_0                    |BIDIR    |LVTTL      |0             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
@@ -86,14 +86,14 @@ Pinout by Pin Number:
 |D16       |DRAM_DQ<11>  |IOB      |IO_L31N_A18_M1A12_1          |BIDIR    |LVTTL      |1             |12        |FAST     |           |NONE     |       |LOCATED   |YES        |NONE            |
 |E1        |PORTF<1>     |IOB      |IO_L46N_M3CLKN_3             |BIDIR    |LVTTL      |3             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |E2        |PORTF<0>     |IOB      |IO_L46P_M3CLK_3              |BIDIR    |LVTTL      |3             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
-|E3        |             |IOBS     |IO_L54N_M3A11_3              |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
+|E3        |OV7670_D<7>  |IOB      |IO_L54N_M3A11_3              |INPUT    |LVTTL      |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |E4        |PORTF<2>     |IOB      |IO_L54P_M3RESET_3            |BIDIR    |LVTTL      |3             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |E5        |             |         |VCCAUX                       |         |           |              |          |         |           |         |2.5    |          |           |                |
-|E6        |             |IOBS     |IO_L5N_0                     |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
+|E6        |OV7670_D<2>  |IOB      |IO_L5N_0                     |INPUT    |LVTTL      |0             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |E7        |SCL          |IOB      |IO_L36P_GCLK15_0             |BIDIR    |LVTTL      |0             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |E8        |             |IOBS     |IO_L36N_GCLK14_0             |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |E9        |             |         |GND                          |         |           |              |          |         |           |         |       |          |           |                |
-|E10       |             |IOBM     |IO_L37P_GCLK13_0             |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
+|E10       |SPI2_CS      |IOB      |IO_L37P_GCLK13_0             |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
 |E11       |PORTB<0>     |IOB      |IO_L64N_SCP4_0               |BIDIR    |LVTTL      |0             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |E12       |PORTB<3>     |IOB      |IO_L1N_A24_VREF_1            |BIDIR    |LVTTL      |1             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |E13       |PORTB<4>     |IOB      |IO_L1P_A25_1                 |BIDIR    |LVTTL      |1             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
@@ -127,14 +127,14 @@ Pinout by Pin Number:
 |G9        |             |         |VCCINT                       |         |           |              |          |         |           |         |1.2    |          |           |                |
 |G10       |             |         |VCCAUX                       |         |           |              |          |         |           |         |2.5    |          |           |                |
 |G11       |             |IOBS     |IO_L30N_A20_M1A11_1          |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
-|G12       |             |IOBM     |IO_L38P_A5_M1CLK_1           |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
+|G12       |ENCODER_A_A  |IOB      |IO_L38P_A5_M1CLK_1           |INPUT    |LVTTL      |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |G13       |             |         |VCCO_1                       |         |           |1             |          |         |           |         |3.30   |          |           |                |
-|G14       |             |IOBM     |IO_L36P_A9_M1BA0_1           |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
+|G14       |ENCODER_A_B  |IOB      |IO_L36P_A9_M1BA0_1           |INPUT    |LVTTL      |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |G15       |             |         |GND                          |         |           |              |          |         |           |         |       |          |           |                |
 |G16       |DRAM_CLK     |IOB      |IO_L36N_A8_M1BA1_1           |OUTPUT   |LVTTL      |1             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
-|H1        |             |IOBS     |IO_L39N_M3LDQSN_3            |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
-|H2        |             |IOBM     |IO_L39P_M3LDQS_3             |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
-|H3        |             |IOBS     |IO_L44N_GCLK20_M3A6_3        |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
+|H1        |OV7670_PCLK  |IOB      |IO_L39N_M3LDQSN_3            |INPUT    |LVTTL      |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|H2        |OV7670_HREF  |IOB      |IO_L39P_M3LDQS_3             |INPUT    |LVTTL      |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|H3        |OV7670_XCLK  |IOB      |IO_L44N_GCLK20_M3A6_3        |OUTPUT   |LVTTL      |3             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
 |H4        |AD_DIN       |IOB      |IO_L44P_GCLK21_M3A5_3        |OUTPUT   |LVTTL      |3             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
 |H5        |AD_OUT       |IOB      |IO_L43N_GCLK22_IRDY2_M3CASN_3|INPUT    |LVTTL      |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |H6        |             |         |VCCAUX                       |         |           |              |          |         |           |         |2.5    |          |           |                |
@@ -145,10 +145,10 @@ Pinout by Pin Number:
 |H11       |             |IOBS     |IO_L38N_A4_M1CLKN_1          |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
 |H12       |             |         |GND                          |         |           |              |          |         |           |         |       |          |           |                |
 |H13       |             |IOBM     |IO_L39P_M1A3_1               |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
-|H14       |             |IOBS     |IO_L39N_M1ODT_1              |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
+|H14       |ENCODER_B_A  |IOB      |IO_L39N_M1ODT_1              |INPUT    |LVTTL      |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |H15       |DRAM_ADDR<12>|IOB      |IO_L37P_A7_M1A0_1            |OUTPUT   |LVTTL      |1             |12        |FAST     |           |         |       |LOCATED   |NO         |NONE            |
 |H16       |DRAM_CKE     |IOB      |IO_L37N_A6_M1A1_1            |OUTPUT   |LVTTL      |1             |12        |FAST     |           |         |       |LOCATED   |NO         |NONE            |
-|J1        |             |IOBS     |IO_L38N_M3DQ3_3              |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
+|J1        |OV7670_VSYNC |IOB      |IO_L38N_M3DQ3_3              |INPUT    |LVTTL      |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |J2        |             |         |VCCO_3                       |         |           |3             |          |         |           |         |3.30   |          |           |                |
 |J3        |             |IOBM     |IO_L38P_M3DQ2_3              |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
 |J4        |CLK          |IOB      |IO_L42N_GCLK24_M3LDM_3       |INPUT    |LVTTL      |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
@@ -161,12 +161,12 @@ Pinout by Pin Number:
 |J11       |             |IOBM     |IO_L40P_GCLK11_M1A5_1        |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
 |J12       |PORTC<1>     |IOB      |IO_L40N_GCLK10_M1A6_1        |BIDIR    |LVTTL      |1             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |J13       |PORTC<0>     |IOB      |IO_L41P_GCLK9_IRDY1_M1RASN_1 |BIDIR    |LVTTL      |1             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
-|J14       |             |IOBM     |IO_L43P_GCLK5_M1DQ4_1        |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
+|J14       |ENCODER_B_B  |IOB      |IO_L43P_GCLK5_M1DQ4_1        |INPUT    |LVTTL      |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |J15       |             |         |VCCO_1                       |         |           |1             |          |         |           |         |3.30   |          |           |                |
 |J16       |DRAM_ADDR<11>|IOB      |IO_L43N_GCLK4_M1DQ5_1        |OUTPUT   |LVTTL      |1             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |
 |K1        |             |IOBS     |IO_L37N_M3DQ1_3              |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
 |K2        |             |IOBM     |IO_L37P_M3DQ0_3              |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
-|K3        |             |IOBM     |IO_L42P_GCLK25_TRDY2_M3UDM_3 |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
+|K3        |CLK50        |IOB      |IO_L42P_GCLK25_TRDY2_M3UDM_3 |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |K4        |             |         |VCCO_3                       |         |           |3             |          |         |           |         |3.30   |          |           |                |
 |K5        |             |IOBM     |IO_L47P_M3A0_3               |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
 |K6        |             |IOBS     |IO_L47N_M3A1_3               |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
@@ -206,7 +206,7 @@ Pinout by Pin Number:
 |M8        |             |         |GND                          |         |           |              |          |         |           |         |       |          |           |                |
 |M9        |LEDS<2>      |IOB      |IO_L29P_GCLK3_2              |BIDIR    |LVTTL      |2             |8         |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |M10       |PORTA<2>     |IOB      |IO_L16N_VREF_2               |BIDIR    |LVTTL      |2             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
-|M11       |             |IOBS     |IO_L2N_CMPMOSI_2             |UNUSED   |           |2             |          |         |           |         |       |          |           |                |
+|M11       |RXD1         |IOB      |IO_L2N_CMPMOSI_2             |INPUT    |LVTTL      |2             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |M12       |             |IOBM     |IO_L2P_CMPCLK_2              |UNUSED   |           |2             |          |         |           |         |       |          |           |                |
 |M13       |PORTC<6>     |IOB      |IO_L74P_AWAKE_1              |BIDIR    |LVTTL      |1             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |M14       |PORTC<5>     |IOB      |IO_L74N_DOUT_BUSY_1          |BIDIR    |LVTTL      |1             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
@@ -239,7 +239,7 @@ Pinout by Pin Number:
 |P9        |LEDS<3>      |IOB      |IO_L14N_D12_2                |BIDIR    |LVTTL      |2             |8         |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |P10       |SPI_MISO     |IOB      |IO_L3P_D0_DIN_MISO_MISO1_2   |INPUT    |LVTTL      |2             |          |         |PULLUP     |NONE     |       |LOCATED   |NO         |NONE            |
 |P11       |LEDS<0>      |IOB      |IO_L13N_D10_2                |BIDIR    |LVTTL      |2             |8         |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
-|P12       |             |IOBS     |IO_L12N_D2_MISO3_2           |UNUSED   |           |2             |          |         |           |         |       |          |           |                |
+|P12       |TXD1         |IOB      |IO_L12N_D2_MISO3_2           |OUTPUT   |LVTTL      |2             |8         |FAST     |           |         |       |LOCATED   |NO         |NONE            |
 |P13       |             |         |DONE_2                       |         |           |              |          |         |           |         |       |          |           |                |
 |P14       |             |         |SUSPEND                      |         |           |              |          |         |           |         |       |          |           |                |
 |P15       |DRAM_ADDR<2> |IOB      |IO_L48P_HDC_M1DQ8_1          |OUTPUT   |LVTTL      |1             |12        |FAST     |           |         |       |LOCATED   |YES        |NONE            |

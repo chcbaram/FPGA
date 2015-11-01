@@ -40,22 +40,22 @@ boolean i2c_get_ack(Port port) {
     digitalWrite(port.scl,LOW);
     digitalWrite(port.sda,HIGH);
     I2C_DELAY;
-//    pinMode(sda,INPUT);			//stm32
-//    pinMode(sda, OUTPUT_OPEN_DRAIN);	//stm32
+    pinMode(port.sda,INPUT);			
     digitalWrite(port.scl,HIGH);
 
     if (!digitalRead(port.sda)) {
       I2C_DELAY;
       digitalWrite(port.scl,LOW);
 	  I2C_DELAY;
-	  digitalWrite(port.sda,HIGH);		//stm32, bug!
-//	  digitalWrite(port.sda,LOW);		//stm32
+	  digitalWrite(port.sda,HIGH);
+      pinMode(port.sda,OUTPUT);           
       return true;
     } else {
       I2C_DELAY;
       digitalWrite(port.scl,LOW);
 	  I2C_DELAY;
 	  digitalWrite(port.sda,HIGH);
+      pinMode(port.sda,OUTPUT);           
       return false;
     }
 }
@@ -84,6 +84,7 @@ void i2c_write_nack(Port port) {
 uint8 i2c_shift_in(Port port) {
     uint8 data = 0;
     int i;
+    pinMode(port.sda, INPUT);
 
     for (i=0;i<8;i++) {
         I2C_DELAY;
@@ -92,6 +93,8 @@ uint8 i2c_shift_in(Port port) {
         data += digitalRead(port.sda) << (7-i);
         digitalWrite(port.scl,LOW);
     }
+
+    pinMode(port.sda, OUTPUT);
     return data;
 }
 

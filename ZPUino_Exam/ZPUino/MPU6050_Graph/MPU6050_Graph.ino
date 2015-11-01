@@ -2,13 +2,9 @@
 #include "I2Cdev.h"
 #include "MPU6050.h"
 #include "Wire.h"
+#include "Kalman.h"
 
-// class default I2C address is 0x68
-// specific I2C addresses may be passed as a parameter here
-// AD0 low = 0x68 (default for InvenSense evaluation board)
-// AD0 high = 0x69
 MPU6050 accelgyro;
-//MPU6050 accelgyro(0x69); // <-- use for AD0 high
 
 int16_t ax, ay, az;
 int16_t gx, gy, gz;
@@ -25,10 +21,12 @@ int16_t gx, gy, gz;
 #define LED_PIN 1
 bool blinkState = false;
 
+HardwareSerial Serial1(10); /* 1st instance/slot */
 
 void setup() 
 {
     Serial.begin(115200);
+    Serial1.begin(115200);
     I2c.begin();
    
 
@@ -87,28 +85,22 @@ void loop()
     Serial.print(gy); Serial.print("\t");
     Serial.println(gz);
 */
-    Serial.print("S");
-    Serial.print(ax); Serial.print("\t");
-    Serial.print(ay); Serial.print("\t");
-    Serial.print(az); Serial.print("\t");
-    Serial.print(gx); Serial.print("\t");
-    Serial.print(gy); Serial.print("\t");
-    Serial.println(gz); Serial.print("\t");
 
-/*
-  Serial.write( (unsigned byte*)&startTag, 2);
-  Serial.write((unsigned byte*)&ax, 2);
-  Serial.write((unsigned byte*)&ay, 2);
-  Serial.write((unsigned byte*)&az, 2);
-  Serial.write((unsigned byte*)&gx, 2);
-  Serial.write((unsigned byte*)&gy, 2);
-  Serial.write((unsigned byte*)&gz, 2);
-*/  
+
+  Serial1.write( (unsigned byte*)&startTag, 2);
+  Serial1.write((unsigned byte*)&ax, 2);
+  Serial1.write((unsigned byte*)&ay, 2);
+  Serial1.write((unsigned byte*)&az, 2);
+  Serial1.write((unsigned byte*)&gx, 2);
+  Serial1.write((unsigned byte*)&gy, 2);
+  Serial1.write((unsigned byte*)&gz, 2);
+  
 
     // blink LED to indicate activity
     blinkState = !blinkState;
     digitalWrite(LED_PIN, blinkState);
-    
+
+    //Serial1.println("Bluetooth");    
     delay(100);
 }
 

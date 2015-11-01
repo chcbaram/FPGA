@@ -725,6 +725,49 @@ package zpuinopkg is
   );
   end component zpuino_adc;
 
+  component zpuino_ov7670 is
+  port (
+	wb_clk_i: in std_logic;
+	wb_rst_i: in std_logic;
+	wb_dat_o: out std_logic_vector(wordSize-1 downto 0);
+	wb_dat_i: in std_logic_vector(wordSize-1 downto 0);
+	wb_adr_i: in std_logic_vector(maxIObit downto minIObit);
+	wb_we_i:  in std_logic;
+	wb_cyc_i: in std_logic;
+	wb_stb_i: in std_logic;
+	wb_ack_o: out std_logic;
+	wb_inta_o:out std_logic;
+
+	CLK50        : in    STD_LOGIC;
+	OV7670_VSYNC : in    STD_LOGIC;
+	OV7670_HREF  : in    STD_LOGIC;
+	OV7670_PCLK  : in    STD_LOGIC;
+	OV7670_XCLK  : out   STD_LOGIC;
+	OV7670_D     : in    STD_LOGIC_VECTOR(7 downto 0)
+
+  );
+  end component zpuino_ov7670;
+
+
+  component zpuino_encoder is
+  port (
+	wb_clk_i: in std_logic;
+	wb_rst_i: in std_logic;
+	wb_dat_o: out std_logic_vector(wordSize-1 downto 0);
+	wb_dat_i: in std_logic_vector(wordSize-1 downto 0);
+	wb_adr_i: in std_logic_vector(maxIObit downto minIObit);
+	wb_we_i:  in std_logic;
+	wb_cyc_i: in std_logic;
+	wb_stb_i: in std_logic;
+	wb_ack_o: out std_logic;
+	wb_inta_o:out std_logic;
+
+	ENCODER_A    : in    STD_LOGIC_VECTOR( 1 downto 0 );
+	ENCODER_B    : in    STD_LOGIC_VECTOR( 1 downto 0 )
+
+  );
+  end component zpuino_encoder;
+
 
 
 end package zpuinopkg;

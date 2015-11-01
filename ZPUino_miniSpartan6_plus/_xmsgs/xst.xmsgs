@@ -41,115 +41,136 @@
 <msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\sdram_hamster.vhd" Line 340: <arg fmt="%s" index="1">data_mask</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 152: Net &lt;<arg fmt="%s" index="1">gpio_i[49]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\zpuino_encoder.vhd" Line 118: <arg fmt="%s" index="1">dir_a</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 170: Net &lt;<arg fmt="%s" index="1">slot_read[4][31]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\zpuino_encoder.vhd" Line 120: <arg fmt="%s" index="1">s_encoder_count_a</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 173: Net &lt;<arg fmt="%s" index="1">slot_ack[4]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\zpuino_encoder.vhd" Line 124: <arg fmt="%s" index="1">dir_b</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 174: Net &lt;<arg fmt="%s" index="1">slot_interrupt[15]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\zpuino_encoder.vhd" Line 126: <arg fmt="%s" index="1">s_encoder_count_b</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 215: Net &lt;<arg fmt="%s" index="1">np_ram_wb_adr_i[27]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\zpuino_ov7670.vhd" Line 132: <arg fmt="%s" index="1">frame_pixel</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 224: Net &lt;<arg fmt="%s" index="1">sram_wb_adr_i[26]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 173: Net &lt;<arg fmt="%s" index="1">gpio_i[49]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">clkout2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clkgen_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 191: Net &lt;<arg fmt="%s" index="1">slot_read[4][31]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">362</arg>: Output port &lt;<arg fmt="%s" index="3">clk_1Mhz_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clkgen_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 194: Net &lt;<arg fmt="%s" index="1">slot_ack[4]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">428</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">obuftx</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 195: Net &lt;<arg fmt="%s" index="1">slot_interrupt[15]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">429</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ospiclk</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 240: Net &lt;<arg fmt="%s" index="1">np_ram_wb_adr_i[27]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">430</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ospics</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd" Line 249: Net &lt;<arg fmt="%s" index="1">sram_wb_adr_i[26]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">431</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ospimosi</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">388</arg>: Output port &lt;<arg fmt="%s" index="3">clkout2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clkgen_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">slot_write&lt;4&gt;</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">388</arg>: Output port &lt;<arg fmt="%s" index="3">clk_1Mhz_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clkgen_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">slot_write&lt;15&gt;</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">454</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">obuftx</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">slot_address&lt;4&gt;</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">455</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ospiclk</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">m_wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">456</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ospics</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">rom_wb_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">457</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ospimosi</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">jtag_data_chain_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">462</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">obuftx1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">dbg_reset</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">465</arg>: Output port &lt;<arg fmt="%s" index="3">slot_write&lt;4&gt;</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">m_wb_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">465</arg>: Output port &lt;<arg fmt="%s" index="3">slot_write&lt;15&gt;</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">m_wb_stall_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">465</arg>: Output port &lt;<arg fmt="%s" index="3">slot_address&lt;4&gt;</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">488</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wb_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memarb</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">465</arg>: Output port &lt;<arg fmt="%s" index="3">m_wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">531</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">465</arg>: Output port &lt;<arg fmt="%s" index="3">rom_wb_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">531</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wb_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">465</arg>: Output port &lt;<arg fmt="%s" index="3">jtag_data_chain_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">531</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wb_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">465</arg>: Output port &lt;<arg fmt="%s" index="3">dbg_reset</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">531</arg>: Output port &lt;<arg fmt="%s" index="3">s1_wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">465</arg>: Output port &lt;<arg fmt="%s" index="3">m_wb_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">531</arg>: Output port &lt;<arg fmt="%s" index="3">s1_wb_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">465</arg>: Output port &lt;<arg fmt="%s" index="3">m_wb_stall_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpuino</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">531</arg>: Output port &lt;<arg fmt="%s" index="3">s1_wb_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">519</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wb_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">memarb</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">531</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wb_we_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">562</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">531</arg>: Output port &lt;<arg fmt="%s" index="3">s1_wb_we_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">562</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wb_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">582</arg>: Output port &lt;<arg fmt="%s" index="3">s_wb_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">npnadapt</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">562</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wb_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">620</arg>: Output port &lt;<arg fmt="%s" index="3">wb2_stall_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">prom</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">562</arg>: Output port &lt;<arg fmt="%s" index="3">s1_wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">646</arg>: Output port &lt;<arg fmt="%s" index="3">enabled</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">slot0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">562</arg>: Output port &lt;<arg fmt="%s" index="3">s1_wb_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">669</arg>: Output port &lt;<arg fmt="%s" index="3">enabled</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">562</arg>: Output port &lt;<arg fmt="%s" index="3">s1_wb_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">760</arg>: Output port &lt;<arg fmt="%s" index="3">raw_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sigmadelta_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">562</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wb_we_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">760</arg>: Output port &lt;<arg fmt="%s" index="3">spp_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sigmadelta_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">562</arg>: Output port &lt;<arg fmt="%s" index="3">s1_wb_we_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bootmux</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">782</arg>: Output port &lt;<arg fmt="%s" index="3">enabled</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">slot1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">613</arg>: Output port &lt;<arg fmt="%s" index="3">s_wb_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">npnadapt</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">651</arg>: Output port &lt;<arg fmt="%s" index="3">wb2_stall_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">prom</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">677</arg>: Output port &lt;<arg fmt="%s" index="3">enabled</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">slot0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">700</arg>: Output port &lt;<arg fmt="%s" index="3">enabled</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">752</arg>: Output port &lt;<arg fmt="%s" index="3">pwm_A_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">timers_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">791</arg>: Output port &lt;<arg fmt="%s" index="3">raw_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sigmadelta_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">791</arg>: Output port &lt;<arg fmt="%s" index="3">spp_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sigmadelta_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\miniSpartan6_plus_top.vhd</arg>&quot; line <arg fmt="%s" index="2">962</arg>: Output port &lt;<arg fmt="%s" index="3">enabled</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">slot10</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">gpio_i&lt;49:48&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -347,6 +368,81 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_dat_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;26:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_rst_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_we_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\zpuino_encoder.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">enc_A</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FPGA\miniSpartan6\ZPUino_miniSpartan6_plus\ipcore_dir\zpuino_encoder.vhd</arg>&quot; line <arg fmt="%s" index="2">179</arg>: Output port &lt;<arg fmt="%s" index="3">error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">enc_B</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_dat_i&lt;31:19&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;26:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;31&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;15&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;14&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;13&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;12&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;11&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;10&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;9&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;8&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">wb_dat_o&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_dat_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
@@ -360,6 +456,30 @@
 </msg>
 
 <msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_7&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cyc</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cache</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;stb&gt; </arg>
@@ -426,7 +546,34 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">intr_in_q_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">intr_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">slot12</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">inject_q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dbg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">address_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">capture</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">address_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">capture</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">address_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">capture</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">address_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">capture</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">frame_addr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">slot12</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">frame_addr_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">slot12</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">frame_addr_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">slot12</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">frame_addr_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">slot12</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">intr_level_q_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">intr_inst</arg>&gt;.
@@ -870,7 +1017,16 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gpio_o_49</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio_inst</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">error</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">enc_A</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">error</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">enc_B</arg>&gt;.
+</msg>
+
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">decr_im_emu</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">core</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram__n0026</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
 <msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_memory</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
@@ -888,7 +1044,7 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_exr_tos[1]_GND_57_o_wide_mux_233_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
-<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram__n1429</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram__n1428</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
 <msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_lsu_we</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
@@ -898,6 +1054,18 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 </msg>
 
 <msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">cache/tagmem/Mram_RAM</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">frame_addr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_ov7670</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">frame_addr_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_ov7670</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">frame_addr_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_ov7670</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">frame_addr_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_ov7670</arg>&gt;.
+</msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">intr_level_q_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_intr</arg>&gt;.
 </msg>
@@ -1106,6 +1274,9 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">zpuino/io/addr_save_q_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_ov7670</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">inject_q_in</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">zpuino_debug_core</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
@@ -1125,16 +1296,46 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dbgr_flush</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_debug_core</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ov7670_capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ov7670_capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ov7670_capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ov7670_capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ov7670_capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ov7670_capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ov7670_capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">d_latch_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ov7670_capture</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dout_7&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cache/cyc</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">zpu_core_extreme_icache</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cache/stb&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">intr_in_q_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">zpuino_intr</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;intr_in_q_11&gt; &lt;intr_in_q_12&gt; &lt;intr_in_q_13&gt; &lt;intr_in_q_14&gt; &lt;intr_in_q_15&gt; &lt;intr_in_q_16&gt; &lt;intr_in_q_17&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">intr_in_q_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">zpuino_intr</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;intr_in_q_10&gt; &lt;intr_in_q_11&gt; &lt;intr_in_q_13&gt; &lt;intr_in_q_14&gt; &lt;intr_in_q_15&gt; &lt;intr_in_q_16&gt; &lt;intr_in_q_17&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">intr_in_q_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">intr_in_q_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">decr_im_emu</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpu_core_extreme_icache</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot10/enabled_q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uart_inst/enabled_q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">decr_state_FSM_FFd1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpu_core_extreme_icache</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1649,13 +1850,13 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 
 <msg type="warning" file="Xst" num="2040" delta="new" >Unit <arg fmt="%s" index="1">I2C_MasterTop</arg>: <arg fmt="%d" index="2">8</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">intr_detected_q_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">intr_detected_q_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">intr_detected_q_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">intr_detected_q_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">intr_detected_q_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">intr_detected_q_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1673,13 +1874,13 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">intr_detected_q_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">intr_served_q_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">intr_served_q_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">intr_served_q_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">intr_served_q_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">intr_served_q_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">intr_served_q_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1692,6 +1893,9 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">intr_served_q_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_intr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_detected_q_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_detected_q_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1709,10 +1913,10 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_detected_q_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_detected_q_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_detected_q_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_detected_q_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_in_q_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_in_q_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1728,9 +1932,6 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_in_q_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_in_q_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_in_q_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1769,6 +1970,30 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">zpuino/io/addr_save_q_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot12/capture/address_next_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot12/capture/address_next_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot12/capture/address_next_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot12/capture/address_next_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot12/capture/address_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot12/capture/address_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot12/capture/address_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot12/capture/address_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">zpuino/core/prefr_opcode_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
 </msg>
 
@@ -1784,10 +2009,10 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">zpuino/core/decr_idim</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uart_inst/enabled_q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uart_inst/fifo_instance/full</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uart_inst/fifo_instance/full</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot10/fifo_instance/full</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gpio_inst/gpio_o_49</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
@@ -2825,6 +3050,216 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gpio_inst/output_mapper_q_2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pwm_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_en</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_en</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmphigh_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmr[0]_cmplow_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmphigh_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_pwmrb[0]_cmplow_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot11/enc_B/error</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">slot11/enc_A/error</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_served_q_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_served_q_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -2840,91 +3275,217 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_served_q_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_served_q_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_served_q_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/tx_timer/cnt_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/tx_timer/cnt_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">zpuino/io/intr_inst/intr_served_q_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">slot10/rx_inst/baudgen/cnt_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_inst/rx_inst/baudgen/cnt_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">miniSpartan6_plus_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/ck64_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/ck64_q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/ck256_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/ck256_q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/ck16_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/ck16_q&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">sram_inst/ctrl/r_init_counter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer0_inst/TSC_q_0&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/ck4_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/ck4_q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/tmrr_presrst</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/tmrr_presrst&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/ck1024_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/ck1024_q&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">slot8/byte_ctrl/bit_ctrl/c_state_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;slot8/byte_ctrl/bit_ctrl/sda_chk&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/counter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/counter_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/counter_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/counter_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/counter_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/counter_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/counter_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/counter_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/ck8_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/ck8_q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/counter_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/counter_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/counter_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/counter_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/counter_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/counter_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/counter_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/counter_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/counter_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/counter_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/counter_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/counter_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">timers_inst/timer0_inst/pr.tmr0prescale_inst/ck2_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">miniSpartan6_plus_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;timers_inst/timer1_inst/pr.tmr0prescale_inst/ck2_q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>
